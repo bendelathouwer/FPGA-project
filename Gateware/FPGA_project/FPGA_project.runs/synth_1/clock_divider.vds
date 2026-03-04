@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Mar  4 19:05:04 2026
+# Process ID         : 22272
+# Current directory  : C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.runs/synth_1
+# Command line       : vivado.exe -log clock_divider.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_divider.tcl
+# Log file           : C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.runs/synth_1/clock_divider.vds
+# Journal file       : C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-1SOIGBV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+# CPU Frequency      : 3192 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17089 MB
+# Swap memory        : 13563 MB
+# Total Virtual      : 30653 MB
+# Available Virtual  : 4894 MB
+#-----------------------------------------------------------
+source clock_divider.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 642.629 ; gain = 257.262
+Command: synth_design -top clock_divider -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17296
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1184.355 ; gain = 534.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.srcs/sources_1/new/Clockdivider.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (0#1) [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.srcs/sources_1/new/Clockdivider.vhd:36]
+WARNING: [Synth 8-3848] Net clk_out2 in module/entity clock_divider does not have driver. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.srcs/sources_1/new/Clockdivider.vhd:33]
+WARNING: [Synth 8-7129] Port clk_out2 in module clock_divider is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.219 ; gain = 652.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1302.219 ; gain = 652.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1302.219 ; gain = 652.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1302.219 ; gain = 652.629
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port clk_out2 in module clock_divider is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1537.188 ; gain = 887.598
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.953 ; gain = 894.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.953 ; gain = 894.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT4   |     4|
+|5     |LUT5   |    36|
+|6     |FDCE   |    33|
+|7     |IBUF   |     2|
+|8     |OBUF   |     1|
+|9     |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    87|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1770.789 ; gain = 1121.199
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1785.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1904.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1aa747eb
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:39 . Memory (MB): peak = 1904.914 ; gain = 1262.285
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1904.914 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/FPGA_project/FPGA_project.runs/synth_1/clock_divider.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file clock_divider_utilization_synth.rpt -pb clock_divider_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 19:05:56 2026...
