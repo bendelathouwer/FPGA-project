@@ -35,25 +35,34 @@ end clock_divider;
 
 architecture Behavioral of clock_divider is
     signal counter : integer := 0;
-    signal clk_reg : std_logic := '0';
+    signal clk_reg1 : std_logic := '0';
+    signal clk_reg2 : std_logic := '0';
 begin
 
     process(clk, reset)
     begin
         if reset = '1' then
             counter <= 0;
-            clk_reg <= '0';
-
+            clk_reg1 <= '0';
+            clk_reg2 <= '0';
         elsif rising_edge(clk) then
             if counter = DIVISOR1 - 1 then
                 counter <= 0;
-                clk_reg <= not clk_reg;
+                clk_reg1 <= not clk_reg1;
             else
                 counter <= counter + 1;
             end if;
         end if;
+        if rising_edge(clk) then
+            if counter = DIVISOR2 - 1 then
+                counter <= 0;
+                clk_reg2 <= not clk_reg2;
+            else
+                counter <= counter + 1;
+            end if;
+         end if ;   
     end process;
 
-    clk_out1 <= clk_reg;
-
+    clk_out1 <= clk_reg1;
+    clk_out2 <= clk_reg2;
 end Behavioral;
