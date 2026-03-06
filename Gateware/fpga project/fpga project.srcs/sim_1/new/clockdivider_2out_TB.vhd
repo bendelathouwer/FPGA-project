@@ -18,7 +18,7 @@ end  clockdivider_2out_TB;
 
 architecture Behavioral of  clockdivider_2out_TB is
 
-    constant CLK_PERIOD : time := 10 ns;
+    constant CLK_PERIOD : time := 8ns;
 
     signal clk     : std_logic := '0';
     signal reset   : std_logic := '1';
