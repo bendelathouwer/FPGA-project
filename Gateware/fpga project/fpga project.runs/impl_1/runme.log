@@ -530,3 +530,14 @@ Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (
 Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.938 ; gain = 0.000
 Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2074.938 ; gain = 0.000
 Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2074.938 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.runs/impl_1/clock_divider_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 8629ea48 ConstDB: 0 ShapeSum: e8301d4f RouteDB: 15f972f0
