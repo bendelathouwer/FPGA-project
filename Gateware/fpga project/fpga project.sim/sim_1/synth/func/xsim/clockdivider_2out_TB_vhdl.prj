@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"clockdivider_2out_TB_func_synth.vhd" \
+"../../../../../fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd" \
+
+# Do not sort compile order
+nosort
