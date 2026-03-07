@@ -7,4 +7,4 @@ REM Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 REM Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 REM
 
-vivado -log soc_core_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source soc_core_wrapper.tcl -notrace
+vivado -log clock_divider.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clock_divider.tcl -notrace
