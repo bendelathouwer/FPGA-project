@@ -1,0 +1,221 @@
+
+*** Running vivado
+    with args -log clock_divider.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clock_divider.tcl -notrace
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Mar  7 09:27:17 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source clock_divider.tcl -notrace
+Command: link_design -top clock_divider -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 897.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_cec'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_clk_n'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[0]'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[0]'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[1]'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[1]'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[2]'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[2]'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_hpd'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_scl'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_sda'. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/constrs_1/new/Constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 11 Warnings, 11 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1061.953 ; gain = 18.277
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 247e49131
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1613.434 ; gain = 551.480
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Phase 1 Initialization | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.233 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.320 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Retarget | Checksum: 247e49131
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 247e49131
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.328 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Constant propagation | Checksum: 247e49131
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Phase 5 Sweep | Checksum: 17b53c799
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.385 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Sweep | Checksum: 17b53c799
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 17b53c799
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.435 . Memory (MB): peak = 2074.938 ; gain = 0.000
+BUFG optimization | Checksum: 17b53c799
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 17b53c799
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.439 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Shift Register Optimization | Checksum: 17b53c799
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 17b53c799
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.441 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Post Processing Netlist | Checksum: 17b53c799
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1ffac38ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.453 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1ffac38ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.462 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1ffac38ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.463 . Memory (MB): peak = 2074.938 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1ffac38ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.466 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1ffac38ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 2074.938 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1ffac38ba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.938 ; gain = 0.000
