@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log clock_divider.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_divider.tcl" );
+         "-log TOP_Led_matrix_project.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_Led_matrix_project.tcl" );
 
 
 

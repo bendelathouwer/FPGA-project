@@ -31,27 +31,30 @@ begin
 
     process(clk, reset)
     begin
-        if reset = '1' then
+         if reset = '1' then
+        counter1 <= 0;
+        counter2 <= 0;
+        clk_reg1 <= '0';
+        clk_reg2 <= '0';
+
+    elsif rising_edge(clk) then
+
+        -- divider 1
+        if counter1 = DIVISOR1 - 1 then
             counter1 <= 0;
-            counter2 <= 0;
-            clk_reg1 <= '0';
-            clk_reg2 <= '0';
-        elsif rising_edge(clk) then
-            if counter1 = DIVISOR1 - 1 then
-                counter1 <= 0;
-                clk_reg1 <= not clk_reg1;
-            else
-                counter1 <= counter1 + 1;
-            end if;
+            clk_reg1 <= not clk_reg1;
+        else
+            counter1 <= counter1 + 1;
         end if;
-        if rising_edge(clk) then
-            if counter2 = DIVISOR2 - 1 then
-                counter2 <= 0;
-                clk_reg2 <= not clk_reg2;
-            else
-                counter2 <= counter2 + 1;
-            end if;
-         end if ;   
+
+        -- divider 2
+        if counter2 = DIVISOR2 - 1 then
+            counter2 <= 0;
+            clk_reg2 <= not clk_reg2;
+        else
+            counter2 <= counter2 + 1;
+        end if;
+    end if;
     end process;
 
     clk_out1 <= clk_reg1;
