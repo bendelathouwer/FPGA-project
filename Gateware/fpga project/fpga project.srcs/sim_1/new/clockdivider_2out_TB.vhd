@@ -1,18 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
 entity clockdivider_2out_TB is
 end  clockdivider_2out_TB;
 
@@ -28,7 +16,7 @@ architecture Behavioral of  clockdivider_2out_TB is
 
 begin
 
-    -- Instantiate DUT
+    -- outstantiate DUT
     uut: entity work.clock_divider
         generic map (
             DIVISOR1 => 5,

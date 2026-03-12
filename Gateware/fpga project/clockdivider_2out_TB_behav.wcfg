@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="865,004 ps"></ZoomStartTime>
-      <ZoomEndTime time="865,730 ps"></ZoomEndTime>
-      <Cursor1Time time="815,000 ps"></Cursor1Time>
+      <ZoomStartTime time="22.384 ns"></ZoomStartTime>
+      <ZoomEndTime time="171.185 ns"></ZoomEndTime>
+      <Cursor1Time time="815.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="251"></NameColumnWidth>
+      <NameColumnWidth column_width="213"></NameColumnWidth>
       <ValueColumnWidth column_width="61"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="9" />
    <wave_markers>
       <marker time="815221" label="" />
    </wave_markers>
@@ -49,5 +49,13 @@
    <wvobject fp_name="/clockdivider_2out_TB/uut/counter2" type="other">
       <obj_property name="ElementShortName">counter2</obj_property>
       <obj_property name="ObjectShortName">counter2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clockdivider_2out_TB/uut/clk_reg1" type="logic">
+      <obj_property name="ElementShortName">clk_reg1</obj_property>
+      <obj_property name="ObjectShortName">clk_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clockdivider_2out_TB/uut/clk_reg2" type="logic">
+      <obj_property name="ElementShortName">clk_reg2</obj_property>
+      <obj_property name="ObjectShortName">clk_reg2</obj_property>
    </wvobject>
 </wave_config>

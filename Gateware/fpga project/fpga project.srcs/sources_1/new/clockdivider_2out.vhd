@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Engineer: Ben De Lathouwer
+-- Engouteer: Ben De Lathouwer
 -- Create Date: 03/04/2026 06:49:25 PM
 -- Design Name: clock-divider
 -- Module Name: Clockdivider - Behavioral
