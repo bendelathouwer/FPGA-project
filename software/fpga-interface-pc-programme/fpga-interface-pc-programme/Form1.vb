@@ -2,6 +2,7 @@
 Imports System.IO
 Imports System.Net
 Imports System.Net.Sockets
+Imports System.Runtime.InteropServices.JavaScript.JSType
 Imports System.Security.Cryptography
 Imports System.Text
 'here we close the application when the close button is clicked 
@@ -22,7 +23,14 @@ Public Class Form1
     End Sub
 
     Private Sub Connect_Click(sender As Object, e As EventArgs) Handles Connect.Click
-        Dim server As New TcpListener(IPAddress, 1234)
+        Dim imagesize As Integer = 0 'init the image size to zero se we can handel in in the import of the picture
+        Try
+            Dim ipString As String = ""
+            Dim ip As IPAddress = IPAddress.Parse(ipString)
+            Dim server As New TcpListener(ip, 1234)
+        Catch ex As Exception
+            debug.AppendText("Error: " & ex.Message & vbCrLf)
+        End Try
 
 
 
@@ -44,6 +52,7 @@ Public Class Form1
     'here we read the ip address that we want to connect to and print it in the debug box
     Public Sub txtIP_KeyDown(sender As Object, e As KeyEventArgs) Handles IpAdder.KeyDown
         If e.KeyCode = Keys.Enter Then
+            ' catch the validation of the ip address here
             Dim ipAddress As String = IpAdder.Text ' ' for our ip addres 
             debug.AppendText(ipAddress & vbCrLf)
             e.SuppressKeyPress = True ' voorkomt "ding"-geluid

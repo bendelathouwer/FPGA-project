@@ -1,0 +1,17 @@
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\fpga-interface-pc-programme.exe
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\fpga-interface-pc-programme.deps.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\fpga-interface-pc-programme.runtimeconfig.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\fpga-interface-pc-programme.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\fpga-interface-pc-programme.pdb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga_interface_pc_programme.Form1.resources
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.vbproj.GenerateResource.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.AssemblyInfoInputs.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.AssemblyInfo.vb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.vbproj.CoreCompileInputs.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.sourcelink.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\refint\fpga-interface-pc-programme.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.pdb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.genruntimeconfig.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\ref\fpga-interface-pc-programme.dll
