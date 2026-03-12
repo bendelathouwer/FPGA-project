@@ -22,42 +22,45 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
+        Open = New Button()
+        Connect = New Button()
+        close = New Button()
         Button4 = New Button()
         Button5 = New Button()
-        RichTextBox1 = New RichTextBox()
+        debug = New RichTextBox()
         PictureBox1 = New PictureBox()
+        connectionmethod = New CheckBox()
+        IpAdder = New TextBox()
+        Label1 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Button1
+        ' Open
         ' 
-        Button1.Location = New Point(12, 376)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 0
-        Button1.Text = "open"
-        Button1.UseVisualStyleBackColor = True
+        Open.Location = New Point(12, 376)
+        Open.Name = "Open"
+        Open.Size = New Size(75, 23)
+        Open.TabIndex = 0
+        Open.Text = "open"
+        Open.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' Connect
         ' 
-        Button2.Location = New Point(93, 376)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
-        Button2.TabIndex = 1
-        Button2.Text = "connect"
-        Button2.UseVisualStyleBackColor = True
+        Connect.Location = New Point(93, 376)
+        Connect.Name = "Connect"
+        Connect.Size = New Size(75, 23)
+        Connect.TabIndex = 1
+        Connect.Text = "connect"
+        Connect.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' close
         ' 
-        Button3.Location = New Point(713, 376)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(75, 23)
-        Button3.TabIndex = 3
-        Button3.Text = "close "
-        Button3.UseVisualStyleBackColor = True
+        close.Location = New Point(713, 376)
+        close.Name = "close"
+        close.Size = New Size(75, 23)
+        close.TabIndex = 3
+        close.Text = "close "
+        close.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
@@ -77,13 +80,13 @@ Partial Class Form1
         Button5.Text = "clear"
         Button5.UseVisualStyleBackColor = True
         ' 
-        ' RichTextBox1
+        ' debug
         ' 
-        RichTextBox1.Location = New Point(3, 265)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(795, 96)
-        RichTextBox1.TabIndex = 5
-        RichTextBox1.Text = ""
+        debug.Location = New Point(3, 265)
+        debug.Name = "debug"
+        debug.Size = New Size(795, 96)
+        debug.TabIndex = 5
+        debug.Text = ""
         ' 
         ' PictureBox1
         ' 
@@ -93,30 +96,63 @@ Partial Class Form1
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
+        ' connectionmethod
+        ' 
+        connectionmethod.AutoSize = True
+        connectionmethod.Location = New Point(255, 380)
+        connectionmethod.Name = "connectionmethod"
+        connectionmethod.Size = New Size(93, 19)
+        connectionmethod.TabIndex = 7
+        connectionmethod.Text = "Socket/tcpip"
+        connectionmethod.UseVisualStyleBackColor = True
+        ' 
+        ' IpAdder
+        ' 
+        IpAdder.Location = New Point(354, 378)
+        IpAdder.Name = "IpAdder"
+        IpAdder.Size = New Size(100, 23)
+        IpAdder.TabIndex = 9
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(460, 381)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(76, 15)
+        Label1.TabIndex = 10
+        Label1.Text = "<=IP address"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label1)
+        Controls.Add(IpAdder)
+        Controls.Add(connectionmethod)
         Controls.Add(PictureBox1)
-        Controls.Add(RichTextBox1)
+        Controls.Add(debug)
         Controls.Add(Button5)
-        Controls.Add(Button3)
+        Controls.Add(close)
         Controls.Add(Button4)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(Connect)
+        Controls.Add(Open)
         Name = "Form1"
         Text = "Form1"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Open As Button
+    Friend WithEvents Connect As Button
+    Friend WithEvents close As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents debug As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents connectionmethod As CheckBox
+    Friend WithEvents IpAdder As TextBox
+    Friend WithEvents Label1 As Label
 
 End Class
