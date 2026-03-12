@@ -22,22 +22,26 @@ Public Class Form1
     End Sub
 
     Private Sub Connect_Click(sender As Object, e As EventArgs) Handles Connect.Click
+        Dim server As New TcpListener(IPAddress, 1234)
+
 
 
     End Sub
+    'here we choose our connection type
+    'Public Sub connectionmethod_CheckedChanged(sender As Object, e As EventArgs) Handles connectionmethod.CheckedChanged
 
-    Public Sub connectionmethod_CheckedChanged(sender As Object, e As EventArgs) Handles connectionmethod.CheckedChanged
+    '    Dim ConnectionType As Integer = 0 ' to store what type of connection we want to use 
+    '    If connectionmethod.Checked Then
+    '        ConnectionType = 1
+    '        debug.AppendText("Socket mode is selected " & ConnectionType & vbLf)
+    '    Else
+    '        ConnectionType = 2
+    '        debug.AppendText("TCP-IP mode is selected " & ConnectionType & vbLf)
 
-        Dim ConnectionType As Integer = 0 ' to store what type of connection we want to use 
-        If connectionmethod.Checked Then
-            ConnectionType = 1
-            debug.AppendText("Socket mode is selected " & ConnectionType & vbLf)
-        Else
-            ConnectionType = 2
-            debug.AppendText("TCP-IP mode is selected " & ConnectionType & vbLf)
+    '    End If
+    'End Sub
 
-        End If
-    End Sub
+    'here we read the ip address that we want to connect to and print it in the debug box
     Public Sub txtIP_KeyDown(sender As Object, e As KeyEventArgs) Handles IpAdder.KeyDown
         If e.KeyCode = Keys.Enter Then
             Dim ipAddress As String = IpAdder.Text ' ' for our ip addres 
