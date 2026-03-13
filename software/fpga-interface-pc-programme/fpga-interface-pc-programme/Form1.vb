@@ -1,10 +1,5 @@
-﻿
-Imports System.IO
-Imports System.Net
+﻿Imports System.Net
 Imports System.Net.Sockets
-Imports System.Runtime.InteropServices.JavaScript.JSType
-Imports System.Security.Cryptography
-Imports System.Text
 'here we close the application when the close button is clicked 
 Public Class Form1
     Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click
@@ -24,10 +19,16 @@ Public Class Form1
 
     Private Sub Connect_Click(sender As Object, e As EventArgs) Handles Connect.Click
         Dim imagesize As Integer = 0 'init the image size to zero se we can handel in in the import of the picture
+        Dim client As TcpClient
+
         Try
             Dim ipString As String = ""
             Dim ip As IPAddress = IPAddress.Parse(ipString)
-            Dim server As New TcpListener(ip, 1234)
+            Dim server As New TcpListener(ip, 8080)
+            server.Start()
+            debug.AppendText("Server started on " & ipString & ":1234" & vbCrLf)
+            client = server.AcceptTcpClient()
+
         Catch ex As Exception
             debug.AppendText("Error: " & ex.Message & vbCrLf)
         End Try
@@ -58,4 +59,25 @@ Public Class Form1
             e.SuppressKeyPress = True ' voorkomt "ding"-geluid
         End If
     End Sub
+    ''
+    Public Sub recieve_Clientdata()
+    End Sub
+    Public Sub Find_IP()
+        Try
+            Dim localIP As String = ""
+            For Each ip As IPAddress In Dns.GetHostAddresses(Dns.GetHostName())
+                If ip.AddressFamily = AddressFamily.InterNetwork AndAlso Not IPAddress.IsLoopback(ip) Then
+                    localIP = ip.ToString()
+                    Exit For ' Stop bij het eerste bruikbare IP-adres
+                End If
+            Next
+            local_ip.Text = localIP.ToString()
+        Catch ex As Exception
+            debug.AppendText("Fout bij ophalen IP-adres: " & ex.Message & vbCrLf)
+        End Try
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Find_IP()
+    End Sub
+
 End Class

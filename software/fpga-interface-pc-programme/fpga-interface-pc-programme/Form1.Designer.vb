@@ -31,7 +31,9 @@ Partial Class Form1
         PictureBox1 = New PictureBox()
         connectionmethod = New CheckBox()
         IpAdder = New TextBox()
+        local_ip = New Label()
         Label1 = New Label()
+        Label2 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -113,20 +115,40 @@ Partial Class Form1
         IpAdder.Size = New Size(100, 23)
         IpAdder.TabIndex = 9
         ' 
+        ' local_ip
+        ' 
+        local_ip.AutoSize = True
+        local_ip.Location = New Point(12, 417)
+        local_ip.Name = "local_ip"
+        local_ip.Size = New Size(47, 15)
+        local_ip.TabIndex = 11
+        local_ip.Text = "local_ip"
+        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Location = New Point(460, 381)
         Label1.Name = "Label1"
-        Label1.Size = New Size(76, 15)
+        Label1.Size = New Size(127, 15)
         Label1.TabIndex = 10
-        Label1.Text = "<=IP address"
+        Label1.Text = "<=IP address of device"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(65, 417)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(145, 15)
+        Label2.TabIndex = 12
+        Label2.Text = "<=IP address of computer"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label2)
+        Controls.Add(local_ip)
         Controls.Add(Label1)
         Controls.Add(IpAdder)
         Controls.Add(connectionmethod)
@@ -153,6 +175,8 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents connectionmethod As CheckBox
     Friend WithEvents IpAdder As TextBox
+    Friend WithEvents local_ip As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 
 End Class
