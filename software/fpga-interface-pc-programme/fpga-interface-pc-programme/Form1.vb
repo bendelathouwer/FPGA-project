@@ -1,10 +1,14 @@
-﻿Imports System.Net
+﻿'port of the test device  == 5000 
+Imports System.Net
 Imports System.Net.Sockets
 'here we close the application when the close button is clicked 
 Public Class Form1
     Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click
         Application.Exit()
 
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Find_IP()
     End Sub
     'here we read the image file and display it in the picture box en eventualy resize that shit 
     Private Sub Open_Click(sender As Object, e As EventArgs) Handles Open.Click
@@ -24,7 +28,7 @@ Public Class Form1
         Try
             Dim ipString As String = ""
             Dim ip As IPAddress = IPAddress.Parse(ipString)
-            Dim server As New TcpListener(ip, 8080)
+            Dim server As New TcpListener(ip, 5000)
             server.Start()
             debug.AppendText("Server started on " & ipString & ":1234" & vbCrLf)
             client = server.AcceptTcpClient()
@@ -36,20 +40,6 @@ Public Class Form1
 
 
     End Sub
-    'here we choose our connection type
-    'Public Sub connectionmethod_CheckedChanged(sender As Object, e As EventArgs) Handles connectionmethod.CheckedChanged
-
-    '    Dim ConnectionType As Integer = 0 ' to store what type of connection we want to use 
-    '    If connectionmethod.Checked Then
-    '        ConnectionType = 1
-    '        debug.AppendText("Socket mode is selected " & ConnectionType & vbLf)
-    '    Else
-    '        ConnectionType = 2
-    '        debug.AppendText("TCP-IP mode is selected " & ConnectionType & vbLf)
-
-    '    End If
-    'End Sub
-
     'here we read the ip address that we want to connect to and print it in the debug box
     Public Sub txtIP_KeyDown(sender As Object, e As KeyEventArgs) Handles IpAdder.KeyDown
         If e.KeyCode = Keys.Enter Then
@@ -61,6 +51,8 @@ Public Class Form1
     End Sub
     ''
     Public Sub recieve_Clientdata()
+        Dim listener As New TcpListener(IPAddress.Any, 5000) 'port needs to be dynemic, needs changing 
+
     End Sub
     Public Sub Find_IP()
         Try
@@ -76,8 +68,8 @@ Public Class Form1
             debug.AppendText("Fout bij ophalen IP-adres: " & ex.Message & vbCrLf)
         End Try
     End Sub
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Find_IP()
+    Public Sub Resize_Image()
+
     End Sub
 
 End Class

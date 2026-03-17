@@ -29,7 +29,6 @@ Partial Class Form1
         Button5 = New Button()
         debug = New RichTextBox()
         PictureBox1 = New PictureBox()
-        connectionmethod = New CheckBox()
         IpAdder = New TextBox()
         local_ip = New Label()
         Label1 = New Label()
@@ -98,16 +97,6 @@ Partial Class Form1
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
-        ' connectionmethod
-        ' 
-        connectionmethod.AutoSize = True
-        connectionmethod.Location = New Point(255, 380)
-        connectionmethod.Name = "connectionmethod"
-        connectionmethod.Size = New Size(93, 19)
-        connectionmethod.TabIndex = 7
-        connectionmethod.Text = "Socket/tcpip"
-        connectionmethod.UseVisualStyleBackColor = True
-        ' 
         ' IpAdder
         ' 
         IpAdder.Location = New Point(354, 378)
@@ -136,7 +125,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(65, 417)
+        Label2.Location = New Point(82, 417)
         Label2.Name = "Label2"
         Label2.Size = New Size(145, 15)
         Label2.TabIndex = 12
@@ -151,7 +140,6 @@ Partial Class Form1
         Controls.Add(local_ip)
         Controls.Add(Label1)
         Controls.Add(IpAdder)
-        Controls.Add(connectionmethod)
         Controls.Add(PictureBox1)
         Controls.Add(debug)
         Controls.Add(Button5)
@@ -173,7 +161,6 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents debug As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents connectionmethod As CheckBox
     Friend WithEvents IpAdder As TextBox
     Friend WithEvents local_ip As Label
     Friend WithEvents Label1 As Label
