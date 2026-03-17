@@ -24,13 +24,13 @@ Public Class Form1
     Private Sub Connect_Click(sender As Object, e As EventArgs) Handles Connect.Click
         Dim imagesize As Integer = 0 'init the image size to zero se we can handel in in the import of the picture
         Dim client As TcpClient
-
+        Dim ipString As String = ""
         Try
-            Dim ipString As String = ""
+
             Dim ip As IPAddress = IPAddress.Parse(ipString)
             Dim server As New TcpListener(ip, 5000)
             server.Start()
-            debug.AppendText("Server started on " & ipString & ":1234" & vbCrLf)
+            debug.AppendText("Server started on " & ipString & ":5000" & vbCrLf)
             client = server.AcceptTcpClient()
 
         Catch ex As Exception
