@@ -74,7 +74,7 @@ Public Class Form1
                 End Using
             End Using
         Catch ex As Exception
-            debug.AppendText("Fout bij verbinden/communiceren: " & ex.Message)
+            debug.AppendText("Fout bij verbinden/communiceren: " & ex.Message & vbCrLf)
         End Try
     End Sub
     Public Sub Find_IP() ' here we find the local hose 
@@ -121,4 +121,6 @@ Public Class Form1
     Private Sub clear_Click(sender As Object, e As EventArgs) Handles clear.Click
         debug.Clear()
     End Sub
+
+
 End Class

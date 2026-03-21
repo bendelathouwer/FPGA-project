@@ -34,6 +34,7 @@ Partial Class Form1
         Label1 = New Label()
         Label2 = New Label()
         Test = New Button()
+        Disconnect = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -48,7 +49,7 @@ Partial Class Form1
         ' 
         ' Connect
         ' 
-        Connect.Location = New Point(93, 376)
+        Connect.Location = New Point(275, 376)
         Connect.Name = "Connect"
         Connect.Size = New Size(75, 23)
         Connect.TabIndex = 1
@@ -100,7 +101,7 @@ Partial Class Form1
         ' 
         ' IpAdder
         ' 
-        IpAdder.Location = New Point(354, 377)
+        IpAdder.Location = New Point(393, 376)
         IpAdder.Name = "IpAdder"
         IpAdder.Size = New Size(100, 23)
         IpAdder.TabIndex = 9
@@ -117,7 +118,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(460, 381)
+        Label1.Location = New Point(499, 380)
         Label1.Name = "Label1"
         Label1.Size = New Size(127, 15)
         Label1.TabIndex = 10
@@ -126,7 +127,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(82, 417)
+        Label2.Location = New Point(93, 417)
         Label2.Name = "Label2"
         Label2.Size = New Size(145, 15)
         Label2.TabIndex = 12
@@ -134,18 +135,28 @@ Partial Class Form1
         ' 
         ' Test
         ' 
-        Test.Location = New Point(255, 376)
+        Test.Location = New Point(93, 376)
         Test.Name = "Test"
         Test.Size = New Size(75, 23)
         Test.TabIndex = 13
         Test.Text = "Test"
         Test.UseVisualStyleBackColor = True
         ' 
+        ' Disconnect
+        ' 
+        Disconnect.Location = New Point(275, 409)
+        Disconnect.Name = "Disconnect"
+        Disconnect.Size = New Size(75, 23)
+        Disconnect.TabIndex = 14
+        Disconnect.Text = "disconnect"
+        Disconnect.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Disconnect)
         Controls.Add(Test)
         Controls.Add(Label2)
         Controls.Add(local_ip)
@@ -177,5 +188,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Test As Button
+    Friend WithEvents Disconnect As Button
 
 End Class
