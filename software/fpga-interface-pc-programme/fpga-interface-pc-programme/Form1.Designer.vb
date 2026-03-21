@@ -26,13 +26,14 @@ Partial Class Form1
         Connect = New Button()
         close = New Button()
         Button4 = New Button()
-        Button5 = New Button()
+        clear = New Button()
         debug = New RichTextBox()
         PictureBox1 = New PictureBox()
         IpAdder = New TextBox()
         local_ip = New Label()
         Label1 = New Label()
         Label2 = New Label()
+        Test = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -72,14 +73,14 @@ Partial Class Form1
         Button4.Text = "send"
         Button4.UseVisualStyleBackColor = True
         ' 
-        ' Button5
+        ' clear
         ' 
-        Button5.Location = New Point(632, 376)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(75, 23)
-        Button5.TabIndex = 4
-        Button5.Text = "clear"
-        Button5.UseVisualStyleBackColor = True
+        clear.Location = New Point(632, 376)
+        clear.Name = "clear"
+        clear.Size = New Size(75, 23)
+        clear.TabIndex = 4
+        clear.Text = "clear"
+        clear.UseVisualStyleBackColor = True
         ' 
         ' debug
         ' 
@@ -99,7 +100,7 @@ Partial Class Form1
         ' 
         ' IpAdder
         ' 
-        IpAdder.Location = New Point(354, 378)
+        IpAdder.Location = New Point(354, 377)
         IpAdder.Name = "IpAdder"
         IpAdder.Size = New Size(100, 23)
         IpAdder.TabIndex = 9
@@ -131,18 +132,28 @@ Partial Class Form1
         Label2.TabIndex = 12
         Label2.Text = "<=IP address of computer"
         ' 
+        ' Test
+        ' 
+        Test.Location = New Point(255, 376)
+        Test.Name = "Test"
+        Test.Size = New Size(75, 23)
+        Test.TabIndex = 13
+        Test.Text = "Test"
+        Test.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Test)
         Controls.Add(Label2)
         Controls.Add(local_ip)
         Controls.Add(Label1)
         Controls.Add(IpAdder)
         Controls.Add(PictureBox1)
         Controls.Add(debug)
-        Controls.Add(Button5)
+        Controls.Add(clear)
         Controls.Add(close)
         Controls.Add(Button4)
         Controls.Add(Connect)
@@ -158,12 +169,13 @@ Partial Class Form1
     Friend WithEvents Connect As Button
     Friend WithEvents close As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents clear As Button
     Friend WithEvents debug As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents IpAdder As TextBox
     Friend WithEvents local_ip As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Test As Button
 
 End Class
