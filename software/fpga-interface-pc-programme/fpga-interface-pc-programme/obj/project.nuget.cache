@@ -1,8 +1,49 @@
 {
   "version": 2,
-  "dgSpecHash": "BBVPG9Pl6JQ=",
+  "dgSpecHash": "z7qC8ZVp4oA=",
   "success": true,
   "projectFilePath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\bende\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\bende\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\bende\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
+      "libraryId": "AForge",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'AForge.Video 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
+      "libraryId": "AForge.Video",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'AForge.Video.DirectShow 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\fpga-interface-pc-programme.vbproj",
+      "libraryId": "AForge.Video.DirectShow",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    }
+  ]
 }

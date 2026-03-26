@@ -3,17 +3,23 @@ Imports System.Net
 Imports System.Net.NetworkInformation
 Imports System.Net.Sockets
 Imports System.Text
+Imports System.Threading
+Imports System.Threading.Tasks
+Imports AForge.Video
+Imports AForge.Video.DirectShow
+
 'here we close the application when the close button is clicked 
 Public Class Form1
     Public Horizonal_matrix_size As Integer '"global" variable for the horizontal size of the led matrix 
     Public Vertical_matrix_size As Integer '"global" variable for the vertical size of the led matrix 
-    ' Huidige client info
-    'Public ipAddress As String = ""
-    'Public port As Integer = 0
     Public hosetipAddress As String = String.Empty '  for our ip addres 
     Public port As Integer = 0   ' for our port number
     Public textboxInput As String = String.Empty
     Public split() As String
+    Public client As TcpClient = Nothing
+    Public ns As NetworkStream = Nothing
+    Public cts As CancellationTokenSource = Nothing
+    Public recvTask As Task = Nothing
 
     Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click
         Application.Exit()
@@ -51,30 +57,59 @@ Public Class Form1
         End If
     End Sub
     ''
-    Public Sub recieve_Clientdata()
-
-
-
-    End Sub
     Public Sub connecttoclient(ip As String, port As String)
         Try
-            Using client As New TcpClient()
-                client.Connect(IPAddress.Parse(ip), port)
-                Using ns As NetworkStream = client.GetStream()
-                    Dim sendMsg As String = "Hello from client"
-                    Dim sendData() As Byte = Encoding.UTF8.GetBytes(sendMsg)
-                    ns.Write(sendData, 0, sendData.Length)
+            Dim portNum As Integer
+            If Not Integer.TryParse(port, portNum) Then
+                debug.AppendText("Ongeldige poort" & vbCrLf)
+                Return
+            End If
 
-                    ' Lees reactie (blokkeert tot er data is of timeout)
-                    ns.ReadTimeout = 3000 ' ms
-                    Dim buffer(1024) As Byte
-                    Dim bytesRead As Integer = ns.Read(buffer, 0, buffer.Length)
-                    Dim response As String = Encoding.UTF8.GetString(buffer, 0, bytesRead)
-                    debug.AppendText("Response: " & response)
-                End Using
-            End Using
+            If client IsNot Nothing AndAlso client.Connected Then
+                debug.AppendText("Al verbonden" & vbCrLf)
+                Return
+            End If
+
+            client = New TcpClient()
+            client.Connect(IPAddress.Parse(ip), portNum)
+            ns = client.GetStream()
+
+            ' Stuur eerste bericht (optioneel)
+            Dim sendMsg As String = "Hello from client"
+            Dim sendData() As Byte = Encoding.UTF8.GetBytes(sendMsg)
+            ns.Write(sendData, 0, sendData.Length)
+
+            cts = New CancellationTokenSource()
+            Dim token = cts.Token
+            recvTask = Task.Run(Sub()
+                                    Dim buffer(4095) As Byte
+                                    Try
+                                        While Not token.IsCancellationRequested AndAlso client IsNot Nothing AndAlso client.Connected
+                                            If ns IsNot Nothing AndAlso ns.DataAvailable Then
+                                                Dim bytesRead As Integer = ns.Read(buffer, 0, buffer.Length)
+                                                If bytesRead = 0 Then Exit While
+                                                Dim response As String = Encoding.UTF8.GetString(buffer, 0, bytesRead)
+                                                Me.Invoke(Sub() debug.AppendText("Ontvangen: " & response & vbCrLf))
+                                            Else
+                                                Thread.Sleep(50)
+                                            End If
+                                        End While
+                                    Catch ex As Exception
+                                        Me.Invoke(Sub() debug.AppendText("Receive error: " & ex.Message & vbCrLf))
+                                    Finally
+                                        Me.Invoke(Sub() debug.AppendText("Verbinding verbroken" & vbCrLf))
+                                        Try
+                                            ns?.Close()
+                                            client?.Close()
+                                        Catch
+                                        End Try
+                                        client = Nothing
+                                        ns = Nothing
+                                        cts = Nothing
+                                    End Try
+                                End Sub)
         Catch ex As Exception
-            debug.AppendText("Fout bij verbinden/communiceren: " & ex.Message & vbCrLf)
+            debug.AppendText("Fout bij verbinden: " & ex.Message & vbCrLf)
         End Try
     End Sub
     Public Sub Find_IP() ' here we find the local hose 
@@ -121,6 +156,45 @@ Public Class Form1
     Private Sub clear_Click(sender As Object, e As EventArgs) Handles clear.Click
         debug.Clear()
     End Sub
+    Public Sub Disconnect_Click(sender As Object, e As EventArgs) Handles Disconnect.Click
+        EthernetDisconnect()
+    End Sub
+    Public Sub EthernetDisconnect()
+        Try
+            ' Stop de receive-loop netjes (als je een CancellationTokenSource gebruikt)
+            If cts IsNot Nothing Then
+                Try
+                    cts.Cancel()
+                Catch
+                    ' ignore
+                End Try
+                Try
+                    cts.Dispose()
+                Catch
+                    ' ignore
+                End Try
+                cts = Nothing
+            End If
+            ' Sluit netwerkstream en client veilig
+            If ns IsNot Nothing Then
+                Try
+                    ns.Close()
+                Catch
+                End Try
+                ns = Nothing
+            End If
 
+            If client IsNot Nothing Then
+                Try
+                    client.Close()
+                Catch
+                End Try
+                client = Nothing
+            End If
 
+            debug.AppendText("Verbinding gesloten" & vbCrLf)
+        Catch ex As Exception
+            debug.AppendText("Fout bij sluiten verbinding: " & ex.Message & vbCrLf)
+        End Try
+    End Sub
 End Class
