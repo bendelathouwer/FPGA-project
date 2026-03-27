@@ -17,26 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 223,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb",
-              "RelativeDocumentMoniker": "fpga-interface-pc-programme\\Form1.vb",
-              "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb",
-              "RelativeToolTip": "fpga-interface-pc-programme\\Form1.vb",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAkwJ8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-12T09:43:08.865Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 177,
+          "DockedWidth": 176,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -48,8 +29,27 @@
               "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb [Design]",
               "RelativeToolTip": "fpga-interface-pc-programme\\Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-12T09:42:39.323Z",
+              "WhenOpened": "2026-03-27T15:32:01.061Z",
               "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 100,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb",
+              "RelativeDocumentMoniker": "fpga-interface-pc-programme\\Form1.vb",
+              "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb",
+              "RelativeToolTip": "fpga-interface-pc-programme\\Form1.vb",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAUwMEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-12T09:43:08.865Z",
+              "EditorCaption": ""
             }
           ]
         }
