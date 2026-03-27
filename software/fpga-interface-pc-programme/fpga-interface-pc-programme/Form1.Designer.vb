@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
         Label4 = New Label()
@@ -40,8 +41,12 @@ Partial Class Form1
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
-        PictureBox2 = New PictureBox()
+        Effect = New Button()
         RichTextBox1 = New RichTextBox()
+        Connect_cam = New Button()
+        PictureBox2 = New PictureBox()
+        Timer1 = New Timer(components)
+        ComboBox1 = New ComboBox()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -214,7 +219,10 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(ComboBox1)
+        TabPage2.Controls.Add(Effect)
         TabPage2.Controls.Add(RichTextBox1)
+        TabPage2.Controls.Add(Connect_cam)
         TabPage2.Controls.Add(PictureBox2)
         TabPage2.Location = New Point(4, 24)
         TabPage2.Name = "TabPage2"
@@ -224,21 +232,48 @@ Partial Class Form1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
         ' 
+        ' Effect
+        ' 
+        Effect.Location = New Point(8, 358)
+        Effect.Name = "Effect"
+        Effect.Size = New Size(101, 22)
+        Effect.TabIndex = 4
+        Effect.Text = "Select effect"
+        Effect.UseVisualStyleBackColor = True
+        ' 
+        ' RichTextBox1
+        ' 
+        RichTextBox1.Location = New Point(508, 329)
+        RichTextBox1.Name = "RichTextBox1"
+        RichTextBox1.Size = New Size(313, 131)
+        RichTextBox1.TabIndex = 3
+        RichTextBox1.Text = ""
+        ' 
+        ' Connect_cam
+        ' 
+        Connect_cam.Location = New Point(8, 329)
+        Connect_cam.Name = "Connect_cam"
+        Connect_cam.Size = New Size(101, 23)
+        Connect_cam.TabIndex = 2
+        Connect_cam.Text = "connect camera"
+        Connect_cam.UseVisualStyleBackColor = True
+        ' 
         ' PictureBox2
         ' 
         PictureBox2.Location = New Point(-3, -3)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(834, 193)
+        PictureBox2.Size = New Size(834, 326)
         PictureBox2.TabIndex = 0
         PictureBox2.TabStop = False
         ' 
-        ' RichTextBox1
+        ' ComboBox1
         ' 
-        RichTextBox1.Location = New Point(1, 197)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(823, 126)
-        RichTextBox1.TabIndex = 1
-        RichTextBox1.Text = ""
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Items.AddRange(New Object() {"Grayscale", "", "Invert", "", "Mirror"})
+        ComboBox1.Location = New Point(115, 357)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(121, 23)
+        ComboBox1.TabIndex = 5
         ' 
         ' Form1
         ' 
@@ -275,7 +310,11 @@ Partial Class Form1
     Friend WithEvents Open As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Connect_cam As Button
+    Friend WithEvents Effect As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents ComboBox1 As ComboBox
 
 End Class

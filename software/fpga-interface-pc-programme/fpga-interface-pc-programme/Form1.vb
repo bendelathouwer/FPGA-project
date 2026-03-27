@@ -192,4 +192,6 @@ Public Class Form1
     Private Sub Connect_Click(sender As Object, e As EventArgs) Handles Connect.Click
         connecttoclient(hosetipAddress, port)
     End Sub
+
+
 End Class
