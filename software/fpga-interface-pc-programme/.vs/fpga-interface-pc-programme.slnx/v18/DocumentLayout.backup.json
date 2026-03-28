@@ -17,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 154,
+          "DockedWidth": 152,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "DockedWidth": 122,
+          "DockedWidth": 124,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -46,7 +46,7 @@
               "RelativeDocumentMoniker": "fpga-interface-pc-programme\\Form1.vb",
               "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb*",
               "RelativeToolTip": "fpga-interface-pc-programme\\Form1.vb*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwMMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAwwB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-03-12T09:43:08.865Z",
               "EditorCaption": ""

@@ -41,17 +41,17 @@ Partial Class Form1
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
+        CameraFeed = New PictureBox()
+        CameraEffects = New ComboBox()
         Effect = New Button()
-        RichTextBox1 = New RichTextBox()
+        DebugCamera = New RichTextBox()
         Connect_cam = New Button()
-        PictureBox2 = New PictureBox()
         Timer1 = New Timer(components)
-        ComboBox1 = New ComboBox()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         TabPage2.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(CameraFeed, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -219,11 +219,11 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
-        TabPage2.Controls.Add(ComboBox1)
+        TabPage2.Controls.Add(CameraFeed)
+        TabPage2.Controls.Add(CameraEffects)
         TabPage2.Controls.Add(Effect)
-        TabPage2.Controls.Add(RichTextBox1)
+        TabPage2.Controls.Add(DebugCamera)
         TabPage2.Controls.Add(Connect_cam)
-        TabPage2.Controls.Add(PictureBox2)
         TabPage2.Location = New Point(4, 24)
         TabPage2.Name = "TabPage2"
         TabPage2.Padding = New Padding(3)
@@ -231,6 +231,23 @@ Partial Class Form1
         TabPage2.TabIndex = 1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' CameraFeed
+        ' 
+        CameraFeed.Location = New Point(8, 6)
+        CameraFeed.Name = "CameraFeed"
+        CameraFeed.Size = New Size(809, 316)
+        CameraFeed.TabIndex = 8
+        CameraFeed.TabStop = False
+        ' 
+        ' CameraEffects
+        ' 
+        CameraEffects.FormattingEnabled = True
+        CameraEffects.Items.AddRange(New Object() {"Grayscale", "Invert", "Mirror", "edgedetect"})
+        CameraEffects.Location = New Point(115, 357)
+        CameraEffects.Name = "CameraEffects"
+        CameraEffects.Size = New Size(121, 23)
+        CameraEffects.TabIndex = 5
         ' 
         ' Effect
         ' 
@@ -241,13 +258,13 @@ Partial Class Form1
         Effect.Text = "Select effect"
         Effect.UseVisualStyleBackColor = True
         ' 
-        ' RichTextBox1
+        ' DebugCamera
         ' 
-        RichTextBox1.Location = New Point(508, 329)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(313, 131)
-        RichTextBox1.TabIndex = 3
-        RichTextBox1.Text = ""
+        DebugCamera.Location = New Point(508, 329)
+        DebugCamera.Name = "DebugCamera"
+        DebugCamera.Size = New Size(313, 131)
+        DebugCamera.TabIndex = 3
+        DebugCamera.Text = ""
         ' 
         ' Connect_cam
         ' 
@@ -258,29 +275,13 @@ Partial Class Form1
         Connect_cam.Text = "connect camera"
         Connect_cam.UseVisualStyleBackColor = True
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Location = New Point(-3, -3)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(834, 326)
-        PictureBox2.TabIndex = 0
-        PictureBox2.TabStop = False
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Grayscale", "", "Invert", "", "Mirror"})
-        ComboBox1.Location = New Point(115, 357)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(121, 23)
-        ComboBox1.TabIndex = 5
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(833, 492)
+        ClientSize = New Size(836, 561)
         Controls.Add(TabControl1)
+        MinimumSize = New Size(800, 600)
         Name = "Form1"
         Text = "Form1"
         TabControl1.ResumeLayout(False)
@@ -288,7 +289,7 @@ Partial Class Form1
         TabPage1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(CameraFeed, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -310,11 +311,11 @@ Partial Class Form1
     Friend WithEvents Open As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Connect_cam As Button
     Friend WithEvents Effect As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents DebugCamera As RichTextBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CameraEffects As ComboBox
+    Friend WithEvents CameraFeed As PictureBox
 
 End Class

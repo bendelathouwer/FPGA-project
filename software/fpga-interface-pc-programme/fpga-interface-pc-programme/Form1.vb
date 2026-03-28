@@ -9,6 +9,7 @@ Imports System.Threading.Tasks
 Imports AForge.Video
 Imports AForge.Video.DirectShow
 
+
 'here we close the application when the close button is clicked 
 Public Class Form1
     'declare some global variables that we will use in the program
@@ -22,11 +23,18 @@ Public Class Form1
     Public ns As NetworkStream = Nothing
     Public cts As CancellationTokenSource = Nothing
     Public recvTask As Task = Nothing
+    Public videoSource As VideoCaptureDevice
+    Public videoSourcePlayer As New AForge.Controls.VideoSourcePlayer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Find_IP()
     End Sub
     Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click
+        If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
+            videoSource.SignalToStop()
+            videoSource.WaitForStop()
+        End If
+
         Application.Exit()
 
     End Sub
@@ -193,5 +201,30 @@ Public Class Form1
         connecttoclient(hosetipAddress, port)
     End Sub
 
+    Private Sub Connect_cam_Click(sender As Object, e As EventArgs) Handles Connect_cam.Click
+        Dim videoDevices As New FilterInfoCollection(FilterCategory.VideoInputDevice)
 
+        If videoDevices.Count > 0 Then
+            videoSource = New VideoCaptureDevice(videoDevices(0).MonikerString)
+            AddHandler videoSource.NewFrame, AddressOf Video_NewFrame
+            videoSource.Start()
+        Else
+            DebugCamera.AppendText("Geen webcam gevonden")
+        End If
+    End Sub
+    Private Sub Video_NewFrame(sender As Object, eventArgs As NewFrameEventArgs)
+        CameraFeed.Image = CType(eventArgs.Frame.Clone(), Bitmap)
+    End Sub
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
+            videoSource.SignalToStop()
+            videoSource.WaitForStop()
+
+        End If
+        Application.Exit()
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CameraEffects.SelectedIndexChanged
+
+    End Sub
 End Class
