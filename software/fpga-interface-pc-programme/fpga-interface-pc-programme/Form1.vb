@@ -8,6 +8,7 @@ Imports System.Threading
 Imports System.Threading.Tasks
 Imports AForge.Video
 Imports AForge.Video.DirectShow
+Imports AForge.Imaging.Filters
 
 
 'here we close the application when the close button is clicked 
@@ -212,8 +213,32 @@ Public Class Form1
             DebugCamera.AppendText("Geen webcam gevonden")
         End If
     End Sub
+    'maybe find a sutabler way to do this but for now this works and it is not too bad(i think)
+    'Also find a libary with a bit more collor posebileties because what I have now is a bit basic and it does not look that good but it works for testing the camera feed and the edge detection and stuff like that
     Private Sub Video_NewFrame(sender As Object, eventArgs As NewFrameEventArgs)
-        CameraFeed.Image = CType(eventArgs.Frame.Clone(), Bitmap)
+        Dim frame As Bitmap = CType(eventArgs.Frame.Clone(), Bitmap)
+        Dim sobel As New SobelEdgeDetector()
+        If edgedetect.Checked Then
+            Dim grayFilter As New Grayscale(0.2125, 0.7154, 0.0721)
+            Dim grayImage As Bitmap = grayFilter.Apply(frame)
+            Dim edges As Bitmap = sobel.Apply(grayImage)
+            CameraFeed.Image = edges
+
+        End If
+        If Grayscale.Checked Then
+            Dim grayFilter As New Grayscale(0.2125, 0.7154, 0.0721)
+            Dim grayImage As Bitmap = grayFilter.Apply(frame)
+            CameraFeed.Image = grayImage
+        End If
+        If Sepia.Checked Then
+            Dim frame24 As Bitmap = frame.Clone(New Rectangle(0, 0, frame.Width, frame.Height), Imaging.PixelFormat.Format24bppRgb)
+            Dim sepia As New Sepia()
+            Dim result As Bitmap = sepia.Apply(frame24)
+            CameraFeed.Image = result
+        End If
+        If Normal.Checked Then
+            CameraFeed.Image = frame
+        End If
     End Sub
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
@@ -223,6 +248,7 @@ Public Class Form1
         End If
         Application.Exit()
     End Sub
+
 
 
 End Class

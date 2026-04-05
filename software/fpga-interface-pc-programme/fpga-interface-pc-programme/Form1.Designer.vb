@@ -41,12 +41,15 @@ Partial Class Form1
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
+        Normal = New RadioButton()
+        Grayscale = New RadioButton()
+        edgedetect = New RadioButton()
         CameraFeed = New PictureBox()
-        CameraEffects = New ComboBox()
         Effect = New Button()
         DebugCamera = New RichTextBox()
         Connect_cam = New Button()
         Timer1 = New Timer(components)
+        Sepia = New RadioButton()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -219,8 +222,11 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(Sepia)
+        TabPage2.Controls.Add(Normal)
+        TabPage2.Controls.Add(Grayscale)
+        TabPage2.Controls.Add(edgedetect)
         TabPage2.Controls.Add(CameraFeed)
-        TabPage2.Controls.Add(CameraEffects)
         TabPage2.Controls.Add(Effect)
         TabPage2.Controls.Add(DebugCamera)
         TabPage2.Controls.Add(Connect_cam)
@@ -232,6 +238,39 @@ Partial Class Form1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
         ' 
+        ' Normal
+        ' 
+        Normal.AutoSize = True
+        Normal.Location = New Point(128, 331)
+        Normal.Name = "Normal"
+        Normal.Size = New Size(65, 19)
+        Normal.TabIndex = 11
+        Normal.TabStop = True
+        Normal.Text = "Normal"
+        Normal.UseVisualStyleBackColor = True
+        ' 
+        ' Grayscale
+        ' 
+        Grayscale.AutoSize = True
+        Grayscale.Location = New Point(128, 360)
+        Grayscale.Name = "Grayscale"
+        Grayscale.Size = New Size(77, 19)
+        Grayscale.TabIndex = 10
+        Grayscale.TabStop = True
+        Grayscale.Text = "grayscale "
+        Grayscale.UseVisualStyleBackColor = True
+        ' 
+        ' edgedetect
+        ' 
+        edgedetect.AutoSize = True
+        edgedetect.Location = New Point(212, 361)
+        edgedetect.Name = "edgedetect"
+        edgedetect.Size = New Size(84, 19)
+        edgedetect.TabIndex = 9
+        edgedetect.TabStop = True
+        edgedetect.Text = "edgedetect"
+        edgedetect.UseVisualStyleBackColor = True
+        ' 
         ' CameraFeed
         ' 
         CameraFeed.Location = New Point(8, 6)
@@ -239,15 +278,6 @@ Partial Class Form1
         CameraFeed.Size = New Size(809, 316)
         CameraFeed.TabIndex = 8
         CameraFeed.TabStop = False
-        ' 
-        ' CameraEffects
-        ' 
-        CameraEffects.FormattingEnabled = True
-        CameraEffects.Items.AddRange(New Object() {"Grayscale", "Invert", "Mirror", "edgedetect"})
-        CameraEffects.Location = New Point(115, 357)
-        CameraEffects.Name = "CameraEffects"
-        CameraEffects.Size = New Size(121, 23)
-        CameraEffects.TabIndex = 5
         ' 
         ' Effect
         ' 
@@ -275,9 +305,20 @@ Partial Class Form1
         Connect_cam.Text = "connect camera"
         Connect_cam.UseVisualStyleBackColor = True
         ' 
+        ' Sepia
+        ' 
+        Sepia.AutoSize = True
+        Sepia.Location = New Point(212, 331)
+        Sepia.Name = "Sepia"
+        Sepia.Size = New Size(53, 19)
+        Sepia.TabIndex = 12
+        Sepia.TabStop = True
+        Sepia.Text = "Sepia"
+        Sepia.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(836, 561)
         Controls.Add(TabControl1)
@@ -289,6 +330,7 @@ Partial Class Form1
         TabPage1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
+        TabPage2.PerformLayout()
         CType(CameraFeed, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
@@ -315,7 +357,10 @@ Partial Class Form1
     Friend WithEvents Effect As Button
     Friend WithEvents DebugCamera As RichTextBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents CameraEffects As ComboBox
     Friend WithEvents CameraFeed As PictureBox
+    Friend WithEvents edgedetect As RadioButton
+    Friend WithEvents Grayscale As RadioButton
+    Friend WithEvents Normal As RadioButton
+    Friend WithEvents Sepia As RadioButton
 
 End Class
