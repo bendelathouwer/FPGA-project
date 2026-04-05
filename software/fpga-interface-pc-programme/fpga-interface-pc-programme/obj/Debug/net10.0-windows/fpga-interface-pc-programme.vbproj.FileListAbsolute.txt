@@ -20,3 +20,6 @@ C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programm
 C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\AForge.Video.DirectShow.dll
 C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-interface-pc-programme.vbproj.AssemblyReference.cache
 C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\obj\Debug\net10.0-windows\fpga-int.5E4315B1.Up2Date
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\AForge.Controls.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\AForge.Imaging.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\fpga-interface-pc-programme\fpga-interface-pc-programme\bin\Debug\net10.0-windows\AForge.Math.dll

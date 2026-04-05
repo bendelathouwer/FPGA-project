@@ -1,0 +1,17 @@
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\bin\Debug\net10.0-windows\formtest.exe
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\bin\Debug\net10.0-windows\formtest.deps.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\bin\Debug\net10.0-windows\formtest.runtimeconfig.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\bin\Debug\net10.0-windows\formtest.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\bin\Debug\net10.0-windows\formtest.pdb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.Form1.resources
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.vbproj.GenerateResource.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.AssemblyInfoInputs.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.AssemblyInfo.vb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.vbproj.CoreCompileInputs.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.sourcelink.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\refint\formtest.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.pdb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\formtest.genruntimeconfig.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\formtest\obj\Debug\net10.0-windows\ref\formtest.dll

@@ -52,6 +52,22 @@
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "dependencies": {
+            "AForge": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "AForge.Controls": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "AForge.Imaging": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "AForge.Math": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "AForge.Video": {
               "target": "Package",
               "version": "[2.2.5, )"
