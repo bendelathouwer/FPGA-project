@@ -224,7 +224,5 @@ Public Class Form1
         Application.Exit()
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CameraEffects.SelectedIndexChanged
 
-    End Sub
 End Class
