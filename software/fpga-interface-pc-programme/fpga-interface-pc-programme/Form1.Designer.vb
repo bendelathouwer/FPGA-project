@@ -41,6 +41,7 @@ Partial Class Form1
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
+        Invert = New RadioButton()
         Sepia = New RadioButton()
         Normal = New RadioButton()
         Grayscale = New RadioButton()
@@ -49,7 +50,7 @@ Partial Class Form1
         DebugCamera = New RichTextBox()
         Connect_cam = New Button()
         Timer1 = New Timer(components)
-        Invert = New RadioButton()
+        DisconnectCam = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -222,6 +223,7 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(DisconnectCam)
         TabPage2.Controls.Add(Invert)
         TabPage2.Controls.Add(Sepia)
         TabPage2.Controls.Add(Normal)
@@ -237,6 +239,17 @@ Partial Class Form1
         TabPage2.TabIndex = 1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' Invert
+        ' 
+        Invert.AutoSize = True
+        Invert.Location = New Point(128, 356)
+        Invert.Name = "Invert"
+        Invert.Size = New Size(55, 19)
+        Invert.TabIndex = 13
+        Invert.TabStop = True
+        Invert.Text = "Invert"
+        Invert.UseVisualStyleBackColor = True
         ' 
         ' Sepia
         ' 
@@ -307,21 +320,20 @@ Partial Class Form1
         Connect_cam.Text = "connect camera"
         Connect_cam.UseVisualStyleBackColor = True
         ' 
-        ' Invert
+        ' DisconnectCam
         ' 
-        Invert.AutoSize = True
-        Invert.Location = New Point(128, 356)
-        Invert.Name = "Invert"
-        Invert.Size = New Size(55, 19)
-        Invert.TabIndex = 13
-        Invert.TabStop = True
-        Invert.Text = "Invert"
-        Invert.UseVisualStyleBackColor = True
+        DisconnectCam.Location = New Point(8, 358)
+        DisconnectCam.Name = "DisconnectCam"
+        DisconnectCam.Size = New Size(101, 23)
+        DisconnectCam.TabIndex = 14
+        DisconnectCam.Text = "disconect camera"
+        DisconnectCam.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
-        AutoScaleMode = AutoScaleMode.Font
+        AutoScaleDimensions = New SizeF(96.0F, 96.0F)
+        AutoScaleMode = AutoScaleMode.Dpi
+        AutoSize = True
         ClientSize = New Size(836, 561)
         Controls.Add(TabControl1)
         MinimumSize = New Size(800, 600)
@@ -365,5 +377,6 @@ Partial Class Form1
     Friend WithEvents Normal As RadioButton
     Friend WithEvents Sepia As RadioButton
     Friend WithEvents Invert As RadioButton
+    Friend WithEvents DisconnectCam As Button
 
 End Class
