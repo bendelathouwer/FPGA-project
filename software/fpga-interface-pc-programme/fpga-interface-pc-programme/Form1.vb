@@ -236,6 +236,12 @@ Public Class Form1
             Dim result As Bitmap = sepia.Apply(frame24)
             CameraFeed.Image = result
         End If
+        If Invert.Checked Then
+            Dim frame24 As Bitmap = frame.Clone(New Rectangle(0, 0, frame.Width, frame.Height), Imaging.PixelFormat.Format24bppRgb)
+            Dim invert As New Invert()
+            Dim result As Bitmap = invert.Apply(frame24)
+            CameraFeed.Image = result
+        End If
         If Normal.Checked Then
             CameraFeed.Image = frame
         End If

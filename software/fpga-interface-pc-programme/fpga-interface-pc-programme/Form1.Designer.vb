@@ -41,15 +41,15 @@ Partial Class Form1
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
+        Sepia = New RadioButton()
         Normal = New RadioButton()
         Grayscale = New RadioButton()
         edgedetect = New RadioButton()
         CameraFeed = New PictureBox()
-        Effect = New Button()
         DebugCamera = New RichTextBox()
         Connect_cam = New Button()
         Timer1 = New Timer(components)
-        Sepia = New RadioButton()
+        Invert = New RadioButton()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -222,12 +222,12 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(Invert)
         TabPage2.Controls.Add(Sepia)
         TabPage2.Controls.Add(Normal)
         TabPage2.Controls.Add(Grayscale)
         TabPage2.Controls.Add(edgedetect)
         TabPage2.Controls.Add(CameraFeed)
-        TabPage2.Controls.Add(Effect)
         TabPage2.Controls.Add(DebugCamera)
         TabPage2.Controls.Add(Connect_cam)
         TabPage2.Location = New Point(4, 24)
@@ -237,6 +237,17 @@ Partial Class Form1
         TabPage2.TabIndex = 1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' Sepia
+        ' 
+        Sepia.AutoSize = True
+        Sepia.Location = New Point(199, 330)
+        Sepia.Name = "Sepia"
+        Sepia.Size = New Size(53, 19)
+        Sepia.TabIndex = 12
+        Sepia.TabStop = True
+        Sepia.Text = "Sepia"
+        Sepia.UseVisualStyleBackColor = True
         ' 
         ' Normal
         ' 
@@ -252,7 +263,7 @@ Partial Class Form1
         ' Grayscale
         ' 
         Grayscale.AutoSize = True
-        Grayscale.Location = New Point(128, 360)
+        Grayscale.Location = New Point(348, 331)
         Grayscale.Name = "Grayscale"
         Grayscale.Size = New Size(77, 19)
         Grayscale.TabIndex = 10
@@ -263,7 +274,7 @@ Partial Class Form1
         ' edgedetect
         ' 
         edgedetect.AutoSize = True
-        edgedetect.Location = New Point(212, 361)
+        edgedetect.Location = New Point(258, 331)
         edgedetect.Name = "edgedetect"
         edgedetect.Size = New Size(84, 19)
         edgedetect.TabIndex = 9
@@ -278,15 +289,6 @@ Partial Class Form1
         CameraFeed.Size = New Size(809, 316)
         CameraFeed.TabIndex = 8
         CameraFeed.TabStop = False
-        ' 
-        ' Effect
-        ' 
-        Effect.Location = New Point(8, 358)
-        Effect.Name = "Effect"
-        Effect.Size = New Size(101, 22)
-        Effect.TabIndex = 4
-        Effect.Text = "Select effect"
-        Effect.UseVisualStyleBackColor = True
         ' 
         ' DebugCamera
         ' 
@@ -305,16 +307,16 @@ Partial Class Form1
         Connect_cam.Text = "connect camera"
         Connect_cam.UseVisualStyleBackColor = True
         ' 
-        ' Sepia
+        ' Invert
         ' 
-        Sepia.AutoSize = True
-        Sepia.Location = New Point(212, 331)
-        Sepia.Name = "Sepia"
-        Sepia.Size = New Size(53, 19)
-        Sepia.TabIndex = 12
-        Sepia.TabStop = True
-        Sepia.Text = "Sepia"
-        Sepia.UseVisualStyleBackColor = True
+        Invert.AutoSize = True
+        Invert.Location = New Point(128, 356)
+        Invert.Name = "Invert"
+        Invert.Size = New Size(55, 19)
+        Invert.TabIndex = 13
+        Invert.TabStop = True
+        Invert.Text = "Invert"
+        Invert.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -362,5 +364,6 @@ Partial Class Form1
     Friend WithEvents Grayscale As RadioButton
     Friend WithEvents Normal As RadioButton
     Friend WithEvents Sepia As RadioButton
+    Friend WithEvents Invert As RadioButton
 
 End Class
