@@ -43,10 +43,11 @@ begin
     -- Stimulus
     stim_proc: process
     begin
+        --reset in sync with clock => realistc with irl hardware and less glitches 
         -- Reset fase
         wait for 50 ns;
+        wait until rising_edge(clk);
         reset <= '0';
-
         -- Simulatietijd
         wait for 500 ns;
 
