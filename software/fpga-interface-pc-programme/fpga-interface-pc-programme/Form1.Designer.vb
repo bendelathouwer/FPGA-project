@@ -37,10 +37,12 @@ Partial Class Form1
         debug = New RichTextBox()
         clear = New Button()
         close = New Button()
-        Button4 = New Button()
+        SendPicture = New Button()
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
+        SendCamera = New Button()
+        DisconnectCam = New Button()
         Invert = New RadioButton()
         Sepia = New RadioButton()
         Normal = New RadioButton()
@@ -50,7 +52,6 @@ Partial Class Form1
         DebugCamera = New RichTextBox()
         Connect_cam = New Button()
         Timer1 = New Timer(components)
-        DisconnectCam = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -82,7 +83,7 @@ Partial Class Form1
         TabPage1.Controls.Add(debug)
         TabPage1.Controls.Add(clear)
         TabPage1.Controls.Add(close)
-        TabPage1.Controls.Add(Button4)
+        TabPage1.Controls.Add(SendPicture)
         TabPage1.Controls.Add(Connect)
         TabPage1.Controls.Add(Open)
         TabPage1.Location = New Point(4, 24)
@@ -194,14 +195,14 @@ Partial Class Form1
         close.Text = "close "
         close.UseVisualStyleBackColor = True
         ' 
-        ' Button4
+        ' SendPicture
         ' 
-        Button4.Location = New Point(171, 372)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(75, 23)
-        Button4.TabIndex = 17
-        Button4.Text = "send"
-        Button4.UseVisualStyleBackColor = True
+        SendPicture.Location = New Point(171, 372)
+        SendPicture.Name = "SendPicture"
+        SendPicture.Size = New Size(75, 23)
+        SendPicture.TabIndex = 17
+        SendPicture.Text = "send"
+        SendPicture.UseVisualStyleBackColor = True
         ' 
         ' Connect
         ' 
@@ -223,6 +224,7 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(SendCamera)
         TabPage2.Controls.Add(DisconnectCam)
         TabPage2.Controls.Add(Invert)
         TabPage2.Controls.Add(Sepia)
@@ -239,6 +241,24 @@ Partial Class Form1
         TabPage2.TabIndex = 1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' SendCamera
+        ' 
+        SendCamera.Location = New Point(8, 387)
+        SendCamera.Name = "SendCamera"
+        SendCamera.Size = New Size(101, 23)
+        SendCamera.TabIndex = 18
+        SendCamera.Text = "send Camera"
+        SendCamera.UseVisualStyleBackColor = True
+        ' 
+        ' DisconnectCam
+        ' 
+        DisconnectCam.Location = New Point(8, 356)
+        DisconnectCam.Name = "DisconnectCam"
+        DisconnectCam.Size = New Size(101, 23)
+        DisconnectCam.TabIndex = 14
+        DisconnectCam.Text = "disconect camera"
+        DisconnectCam.UseVisualStyleBackColor = True
         ' 
         ' Invert
         ' 
@@ -320,15 +340,6 @@ Partial Class Form1
         Connect_cam.Text = "connect camera"
         Connect_cam.UseVisualStyleBackColor = True
         ' 
-        ' DisconnectCam
-        ' 
-        DisconnectCam.Location = New Point(8, 358)
-        DisconnectCam.Name = "DisconnectCam"
-        DisconnectCam.Size = New Size(101, 23)
-        DisconnectCam.TabIndex = 14
-        DisconnectCam.Text = "disconect camera"
-        DisconnectCam.UseVisualStyleBackColor = True
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(96.0F, 96.0F)
@@ -362,7 +373,7 @@ Partial Class Form1
     Friend WithEvents debug As RichTextBox
     Friend WithEvents clear As Button
     Friend WithEvents close As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents SendPicture As Button
     Friend WithEvents Connect As Button
     Friend WithEvents Open As Button
     Friend WithEvents Label3 As Label
@@ -378,5 +389,6 @@ Partial Class Form1
     Friend WithEvents Sepia As RadioButton
     Friend WithEvents Invert As RadioButton
     Friend WithEvents DisconnectCam As Button
+    Friend WithEvents SendCamera As Button
 
 End Class

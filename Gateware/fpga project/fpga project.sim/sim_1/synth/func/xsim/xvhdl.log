@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.sim/sim_1/synth/func/xsim/clockdivider_2out_TB_func_synth.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clock_divider'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clockdivider_2out_TB'
-ERROR: [VRFC 10-3342] formal 'divisor1' is not a generic [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd:34]
-ERROR: [VRFC 10-3342] formal 'divisor2' is not a generic [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd:35]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd:19]
-INFO: [VRFC 10-8704] VHDL file 'C:/Users/bende/Documents/GitHub/FPGA-project/Gateware/fpga project/fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd' is ignored due to errors

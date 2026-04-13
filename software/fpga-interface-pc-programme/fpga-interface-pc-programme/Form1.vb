@@ -4,6 +4,7 @@ Imports System.Net
 Imports System.Net.NetworkInformation
 Imports System.Net.Sockets
 Imports System.Text
+Imports System.IO
 Imports System.Threading
 Imports System.Threading.Tasks
 Imports AForge.Video
@@ -265,5 +266,13 @@ Public Class Form1
             videoSource.WaitForStop()
             DebugCamera.AppendText(" webcam disconnected")
         End If
+    End Sub
+
+    Private Sub SendPicture_Click(sender As Object, e As EventArgs) Handles SendPicture.Click
+
+    End Sub
+
+    Private Sub SendCamera_Click(sender As Object, e As EventArgs) Handles SendCamera.Click
+
     End Sub
 End Class
