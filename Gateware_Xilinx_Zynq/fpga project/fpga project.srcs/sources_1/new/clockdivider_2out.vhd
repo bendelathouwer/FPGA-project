@@ -23,7 +23,7 @@ entity clock_divider is
             reset    : in  std_logic;
             clk_out1 : out std_logic;
             clk_out2 : out std_logic;
-            clk_out3 : out std_logic    
+            matrix_clock : out std_logic    
         );
 end clock_divider;
 
@@ -33,7 +33,7 @@ architecture Behavioral of clock_divider is
     signal counter3 : integer := 0;
     signal clk_reg1 : std_logic := '0';
     signal clk_reg2 : std_logic := '0';
-    signal clk_reg3 :std_logic := '0';
+    signal matrix_clk_reg :std_logic := '0';
 begin
 
     process(clk, reset)
@@ -44,7 +44,7 @@ begin
         counter3 <= 0;
         clk_reg1 <= '0';
         clk_reg2 <= '0';
-        clk_reg3 <= '0';
+        matrix_clk_reg <= '0';
 
 
     elsif rising_edge(clk) then
@@ -67,7 +67,7 @@ begin
         --devider 3
         if counter3 = DIVISOR3 - 1 then
             counter3 <= 0;
-            clk_reg3 <= not clk_reg3;
+            matrix_clk_reg <= not matrix_clk_reg;
         else
             counter3 <= counter3 + 1;
         end if;
@@ -76,5 +76,5 @@ begin
 
     clk_out1 <= clk_reg1;
     clk_out2 <= clk_reg2;
-    clk_out3 <= clk_reg3;
+    matrix_clock <= matrix_clk_reg;
 end Behavioral;

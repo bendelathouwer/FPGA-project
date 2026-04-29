@@ -12,16 +12,13 @@ architecture Behavioral of clockdivider_2out_TB is
     signal reset      : std_logic := '1';
     signal clk_out1   : std_logic;
     signal clk_out2   : std_logic;
-    signal clk_out3   : std_logic;
+    signal matrix_clock   : std_logic;
 
     constant DIV1 : integer := 5000;
     constant DIV2 : integer := 200;
     constant DIV3 : integer := 26042;
 
-    -- measurement
-    signal t1, t2 : time := 0 ns;
-    signal period : time := 0 ns;
-
+   
 begin
 
     --------------------------------------------------------------------
@@ -38,7 +35,7 @@ begin
             reset    => reset,
             clk_out1 => clk_out1,
             clk_out2 => clk_out2,
-            clk_out3 => clk_out3
+            matrix_clock => matrix_clock
         );
 
     --------------------------------------------------------------------
