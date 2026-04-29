@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1773287433" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/clock_divider.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1777459334" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/clock_divider.dcp">
   <File Type="REPORTS-TCL" Name="clock_divider_reports.tcl"/>
   <File Type="RDS-UTIL" Name="clock_divider_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="clock_divider_utilization_synth.pb"/>
@@ -15,7 +15,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/matrix_logic.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/Processing_System/Processing_System.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/matrixlogic.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -31,7 +39,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="clock_divider"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

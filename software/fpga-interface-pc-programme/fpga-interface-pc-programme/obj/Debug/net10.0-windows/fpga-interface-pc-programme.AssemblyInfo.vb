@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("fpga-interface-pc-programme"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1fad90ba121289b7c23c157867ad620d8404fa7"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d13ce668184146e87e0b709674b86e5f2198a052"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("fpga-interface-pc-programme"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("fpga-interface-pc-programme"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
