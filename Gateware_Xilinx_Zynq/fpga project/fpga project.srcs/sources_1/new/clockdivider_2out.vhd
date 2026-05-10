@@ -23,7 +23,7 @@ entity clock_divider is
             reset    : in  std_logic;
             clk_out1 : out std_logic;
             clk_out2 : out std_logic;
-            matrix_clock : out std_logic    
+            matrix_clockOUT : out std_logic    
         );
 end clock_divider;
 
@@ -76,5 +76,5 @@ begin
 
     clk_out1 <= clk_reg1;
     clk_out2 <= clk_reg2;
-    matrix_clock <= matrix_clk_reg;
+    matrix_clockOUT <= matrix_clk_reg;
 end Behavioral;

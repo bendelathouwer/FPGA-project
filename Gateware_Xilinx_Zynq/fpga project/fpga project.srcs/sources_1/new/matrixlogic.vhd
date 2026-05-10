@@ -31,11 +31,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity matrixlogic is
---  Port ( );
-end matrixlogic;
+entity hub75E_driver is
+ Port (     
+            --ditherd pixeldata 
+            R_in : in std_logic_vector(2 downto 0);
+            G_in : in std_logic_vector(2 downto 0);
+            B_in : in std_logic_vector(1 downto 0);
+            --control logic 
+            R1, G1, B1, R2, G2, B2 : out std_logic;
+            A, B, C, D, E : out std_logic;
+            LAT, OE, matrix_clockIN: out std_logic
+ );
+end hub75E_driver;
 
-architecture Behavioral of matrixlogic is
+architecture Behavioral of hub75E_driver is
 
 begin
 
