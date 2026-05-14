@@ -23,8 +23,9 @@ ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 
-#pulls the yocto build into the container     
-RUN git clone git://git.yoctoproject.org/poky
+#pulls the yocto build into the container
+# we need to run https because port issues ß     
+RUN git clone https://git.yoctoproject.org/poky
 
 #here we copy the entry point script and make it an exec 
 COPY entrypoint.sh /entrypoint.sh
