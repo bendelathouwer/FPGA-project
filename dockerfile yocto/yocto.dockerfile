@@ -1,6 +1,11 @@
 FROM ubuntu:22.04
-
 ENV DEBIAN_FRONTEND=noninteractive
+
+#if error Exit code 100 is present run this first 
+RUN apt-get update && apt-get install -y software-properties-common && \
+    add-apt-repository universe
+RUN apt-get update
+
 
 #install yocto dependencies 
 RUN apt-get update && apt-get install -y \
@@ -10,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     libegl1-mesa libsdl1.2-dev pylint xterm file locales \
     zstd lz4 sudo vim
 
-
+#these comands has an order , locals need to be ran first 
 
 # Locale setting 
 RUN locale-gen en_US.UTF-8
