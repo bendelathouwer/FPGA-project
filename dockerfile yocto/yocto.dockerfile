@@ -24,7 +24,7 @@ ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 
 #pulls the yocto build into the container
-# we need to run https because port issues ß     
+# we need to run https because port issues ßcle     
 RUN git clone https://git.yoctoproject.org/poky
 
 #here we copy the entry point script and make it an exec 
