@@ -1,4 +1,4 @@
-FROM ubuntu:26.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -9,6 +9,15 @@ RUN apt-get update && apt-get install -y \
     xz-utils debianutils iputils-ping python3-git python3-jinja2 \
     libegl1-mesa libsdl1.2-dev pylint xterm file locales \
     zstd lz4 sudo vim
+
+
+
+# Locale setting 
+RUN locale-gen en_US.UTF-8
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV LC_ALL=en_US.UTF-8
+
 #pulls the yocto build into the container     
 RUN git clone git://git.yoctoproject.org/poky
 
@@ -16,13 +25,7 @@ RUN git clone git://git.yoctoproject.org/poky
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh   
 
-# Locale instellen
-RUN locale-gen en_US.UTF-8
-ENV LANG=en_US.UTF-8
-ENV LANGUAGE=en_US:en
-ENV LC_ALL=en_US.UTF-8
-
-# Niet als root bouwen
+# don't build as root 
 RUN useradd -ms /bin/bash builder
 RUN echo "builder ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
@@ -30,3 +33,4 @@ USER builder
 WORKDIR /home/builder
 
 CMD ["/bin/bash"]
+   
