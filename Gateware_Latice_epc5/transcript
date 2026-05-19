@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/test/test.mdo}
+# Loading project test
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:31:33 on May 19,2026
+# vcom -reportprogress 300 -work work C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hub75E_driver
+# -- Compiling architecture Behavioral of hub75E_driver
+# End time: 17:31:33 on May 19,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:31:33 on May 19,2026
+# vcom -reportprogress 300 -work work C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dithering
+# -- Compiling architecture Behavioral of dithering
+# End time: 17:31:33 on May 19,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:31:33 on May 19,2026
+# vcom -reportprogress 300 -work work C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clock_divider
+# -- Compiling architecture Behavioral of clock_divider
+# End time: 17:31:33 on May 19,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:31:33 on May 19,2026
+# vcom -reportprogress 300 -work work C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity top_level
+# -- Compiling architecture Behavioral of top_level
+# End time: 17:31:33 on May 19,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u top_level 
+# Start time: 17:31:34 on May 19,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl(146): (vopt-1134) Incompatible modes for port "matrix_clockIN" in component "hub75E_driver" when binding to entity "hub75E_driver".
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO C:\Users\bende\Documents\GitHub\FPGA-project\Gateware_Latice_epc5\test\test.mdo PAUSED at line 18
+# End time: 17:31:40 on May 19,2026, Elapsed time: 0:00:06
+# Errors: 1, Warnings: 8

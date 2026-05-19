@@ -1,0 +1,203 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue May 19 18:26:39 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top_level
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            1600 items scored, 192 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.523ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clk_div_inst/counter3_39__i0  (from clk_c +)
+   Destination:    FD1S3AX    D              \clk_div_inst/matrix_clk_reg_36  (to clk_c +)
+
+   Delay:                   6.698ns  (22.4% logic, 77.6% route), 8 logic levels.
+
+ Constraint Details:
+
+      6.698ns data_path \clk_div_inst/counter3_39__i0 to \clk_div_inst/matrix_clk_reg_36 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.523ns
+
+ Path Details: \clk_div_inst/counter3_39__i0 to \clk_div_inst/matrix_clk_reg_36
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \clk_div_inst/counter3_39__i0 (from clk_c)
+Route         2   e 1.258                                  \clk_div_inst/counter3[0]
+LUT4        ---     0.166              A to Z              \clk_div_inst/i134_1_lut
+Route         1   e 1.020                                  \clk_div_inst/n226
+A1_TO_FCO   ---     0.329           B[2] to COUT           \clk_div_inst/equal_141_0
+Route         1   e 0.020                                  \clk_div_inst/n236
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
+Route         1   e 0.020                                  \clk_div_inst/n237
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
+Route         1   e 0.020                                  \clk_div_inst/n238
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+Route         1   e 0.020                                  \clk_div_inst/n239
+FCI_TO_F    ---     0.322            CIN to S[2]           \clk_div_inst/equal_141_32
+Route        33   e 1.819                                  \clk_div_inst/n135
+LUT4        ---     0.166              B to Z              \clk_div_inst/i1_2_lut
+Route         1   e 1.020                                  \clk_div_inst/matrix_clockOUT_N_198
+                  --------
+                    6.698  (22.4% logic, 77.6% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 1.523ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clk_div_inst/counter3_39__i14  (from clk_c +)
+   Destination:    FD1S3AX    D              \clk_div_inst/matrix_clk_reg_36  (to clk_c +)
+
+   Delay:                   6.698ns  (22.4% logic, 77.6% route), 8 logic levels.
+
+ Constraint Details:
+
+      6.698ns data_path \clk_div_inst/counter3_39__i14 to \clk_div_inst/matrix_clk_reg_36 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.523ns
+
+ Path Details: \clk_div_inst/counter3_39__i14 to \clk_div_inst/matrix_clk_reg_36
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \clk_div_inst/counter3_39__i14 (from clk_c)
+Route         2   e 1.258                                  \clk_div_inst/counter3[14]
+LUT4        ---     0.166              A to Z              \clk_div_inst/i138_1_lut
+Route         1   e 1.020                                  \clk_div_inst/n230
+A1_TO_FCO   ---     0.329           D[2] to COUT           \clk_div_inst/equal_141_0
+Route         1   e 0.020                                  \clk_div_inst/n236
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
+Route         1   e 0.020                                  \clk_div_inst/n237
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
+Route         1   e 0.020                                  \clk_div_inst/n238
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+Route         1   e 0.020                                  \clk_div_inst/n239
+FCI_TO_F    ---     0.322            CIN to S[2]           \clk_div_inst/equal_141_32
+Route        33   e 1.819                                  \clk_div_inst/n135
+LUT4        ---     0.166              B to Z              \clk_div_inst/i1_2_lut
+Route         1   e 1.020                                  \clk_div_inst/matrix_clockOUT_N_198
+                  --------
+                    6.698  (22.4% logic, 77.6% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 1.523ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clk_div_inst/counter3_39__i10  (from clk_c +)
+   Destination:    FD1S3AX    D              \clk_div_inst/matrix_clk_reg_36  (to clk_c +)
+
+   Delay:                   6.698ns  (22.4% logic, 77.6% route), 8 logic levels.
+
+ Constraint Details:
+
+      6.698ns data_path \clk_div_inst/counter3_39__i10 to \clk_div_inst/matrix_clk_reg_36 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.523ns
+
+ Path Details: \clk_div_inst/counter3_39__i10 to \clk_div_inst/matrix_clk_reg_36
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \clk_div_inst/counter3_39__i10 (from clk_c)
+Route         2   e 1.258                                  \clk_div_inst/counter3[10]
+LUT4        ---     0.166              A to Z              \clk_div_inst/i128_1_lut
+Route         1   e 1.020                                  \clk_div_inst/n220
+A1_TO_FCO   ---     0.329           A[2] to COUT           \clk_div_inst/equal_141_0
+Route         1   e 0.020                                  \clk_div_inst/n236
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
+Route         1   e 0.020                                  \clk_div_inst/n237
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
+Route         1   e 0.020                                  \clk_div_inst/n238
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+Route         1   e 0.020                                  \clk_div_inst/n239
+FCI_TO_F    ---     0.322            CIN to S[2]           \clk_div_inst/equal_141_32
+Route        33   e 1.819                                  \clk_div_inst/n135
+LUT4        ---     0.166              B to Z              \clk_div_inst/i1_2_lut
+Route         1   e 1.020                                  \clk_div_inst/matrix_clockOUT_N_198
+                  --------
+                    6.698  (22.4% logic, 77.6% route), 8 logic levels.
+
+Warning: 6.523 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     6.523 ns|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\clk_div_inst/n135                      |      33|     192|     99.00%
+                                        |        |        |
+\clk_div_inst/n239                      |       1|     188|     97.92%
+                                        |        |        |
+\clk_div_inst/n238                      |       1|     148|     77.08%
+                                        |        |        |
+\clk_div_inst/n237                      |       1|     140|     72.92%
+                                        |        |        |
+\clk_div_inst/n236                      |       1|     100|     52.08%
+                                        |        |        |
+\clk_div_inst/counter3[0]               |       2|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/counter3[4]               |       2|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/counter3[10]              |       2|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/counter3[13]              |       2|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/counter3[14]              |       2|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/n172                      |       1|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/n220                      |       1|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/n221                      |       1|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/n226                      |       1|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/n230                      |       1|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/matrix_clockOUT_N_198     |       1|      32|     16.67%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 192  Score: 60010
+
+Constraints cover  1600 paths, 97 nets, and 193 connections (92.3% coverage)
+
+
+Peak memory: 100552704 bytes, TRCE: 1499136 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

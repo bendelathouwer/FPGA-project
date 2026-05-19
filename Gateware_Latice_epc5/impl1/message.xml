@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(5): </Dynamic>
+            <Dynamic>top_level</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(21): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35929241</ID>
+            <Severity>Error</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(171): </Dynamic>
+            <Dynamic>matrix_latch_clock_in</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>171</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>
