@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf(8): Semantic error in &quot;FREQUENCY PORT &quot;clk_25mhz&quot; 25.000000 MHz ;&quot;: </Dynamic>
+            <Dynamic>&quot;clk_25mhz&quot; matches no ports in the design. </Dynamic>
+            <Navigation>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf(6): Semantic error in &quot;LOCATE COMP &quot;clk_25mhz&quot; SITE &quot;G2&quot; ;&quot;: </Dynamic>
+            <Dynamic>clk_25mhz</Dynamic>
+            <Navigation>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf(7): Semantic error in &quot;IOBUF PORT &quot;clk_25mhz&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>clk_25mhz</Dynamic>
+            <Navigation>C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -32,12 +80,167 @@
             <Navigation>21</Navigation>
         </Message>
         <Message>
-            <ID>35929241</ID>
-            <Severity>Error</Severity>
-            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(171): </Dynamic>
-            <Dynamic>matrix_latch_clock_in</Dynamic>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl(15): </Dynamic>
+            <Dynamic>clk_div</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl(30): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd(27): </Dynamic>
+            <Dynamic>dithering</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd(41): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd(28): </Dynamic>
+            <Dynamic>hub75e_driver</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd(42): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd</Navigation>
+            <Navigation>42</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl(4): </Dynamic>
+            <Dynamic>clockdivider_tb</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl(7): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(35): </Dynamic>
+            <Dynamic>&quot;UU&quot;</Dynamic>
+            <Dynamic>x</Dynamic>
             <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
-            <Navigation>171</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(36): </Dynamic>
+            <Dynamic>&quot;UU&quot;</Dynamic>
+            <Dynamic>y</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(43): </Dynamic>
+            <Dynamic>&quot;UUUUUUUU&quot;</Dynamic>
+            <Dynamic>r_in</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(44): </Dynamic>
+            <Dynamic>&quot;UUUUUUUU&quot;</Dynamic>
+            <Dynamic>g_in</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>44</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(45): </Dynamic>
+            <Dynamic>&quot;UUUUUUUU&quot;</Dynamic>
+            <Dynamic>b_in</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(19): </Dynamic>
+            <Dynamic>top_level</Dynamic>
+            <Dynamic>Behavioral</Dynamic>
+            <Navigation>c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>clk</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>reset</Dynamic>
+            <Navigation>reset</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

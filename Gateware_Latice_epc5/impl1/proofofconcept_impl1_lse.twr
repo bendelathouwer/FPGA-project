@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Tue May 19 18:26:39 2026
+Wed May 20 16:45:43 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -44,17 +44,17 @@ Error:  The following path violates requirements by 1.523ns
 L_CO        ---     0.365             CK to Q              \clk_div_inst/counter3_39__i0 (from clk_c)
 Route         2   e 1.258                                  \clk_div_inst/counter3[0]
 LUT4        ---     0.166              A to Z              \clk_div_inst/i134_1_lut
-Route         1   e 1.020                                  \clk_div_inst/n226
+Route         1   e 1.020                                  \clk_div_inst/n227
 A1_TO_FCO   ---     0.329           B[2] to COUT           \clk_div_inst/equal_141_0
-Route         1   e 0.020                                  \clk_div_inst/n236
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
 Route         1   e 0.020                                  \clk_div_inst/n237
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
 Route         1   e 0.020                                  \clk_div_inst/n238
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
 Route         1   e 0.020                                  \clk_div_inst/n239
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+Route         1   e 0.020                                  \clk_div_inst/n240
 FCI_TO_F    ---     0.322            CIN to S[2]           \clk_div_inst/equal_141_32
-Route        33   e 1.819                                  \clk_div_inst/n135
+Route        33   e 1.819                                  \clk_div_inst/n136
 LUT4        ---     0.166              B to Z              \clk_div_inst/i1_2_lut
 Route         1   e 1.020                                  \clk_div_inst/matrix_clockOUT_N_198
                   --------
@@ -82,17 +82,17 @@ Error:  The following path violates requirements by 1.523ns
 L_CO        ---     0.365             CK to Q              \clk_div_inst/counter3_39__i14 (from clk_c)
 Route         2   e 1.258                                  \clk_div_inst/counter3[14]
 LUT4        ---     0.166              A to Z              \clk_div_inst/i138_1_lut
-Route         1   e 1.020                                  \clk_div_inst/n230
+Route         1   e 1.020                                  \clk_div_inst/n231
 A1_TO_FCO   ---     0.329           D[2] to COUT           \clk_div_inst/equal_141_0
-Route         1   e 0.020                                  \clk_div_inst/n236
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
 Route         1   e 0.020                                  \clk_div_inst/n237
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
 Route         1   e 0.020                                  \clk_div_inst/n238
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
 Route         1   e 0.020                                  \clk_div_inst/n239
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+Route         1   e 0.020                                  \clk_div_inst/n240
 FCI_TO_F    ---     0.322            CIN to S[2]           \clk_div_inst/equal_141_32
-Route        33   e 1.819                                  \clk_div_inst/n135
+Route        33   e 1.819                                  \clk_div_inst/n136
 LUT4        ---     0.166              B to Z              \clk_div_inst/i1_2_lut
 Route         1   e 1.020                                  \clk_div_inst/matrix_clockOUT_N_198
                   --------
@@ -120,17 +120,17 @@ Error:  The following path violates requirements by 1.523ns
 L_CO        ---     0.365             CK to Q              \clk_div_inst/counter3_39__i10 (from clk_c)
 Route         2   e 1.258                                  \clk_div_inst/counter3[10]
 LUT4        ---     0.166              A to Z              \clk_div_inst/i128_1_lut
-Route         1   e 1.020                                  \clk_div_inst/n220
+Route         1   e 1.020                                  \clk_div_inst/n221
 A1_TO_FCO   ---     0.329           A[2] to COUT           \clk_div_inst/equal_141_0
-Route         1   e 0.020                                  \clk_div_inst/n236
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
 Route         1   e 0.020                                  \clk_div_inst/n237
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_27
 Route         1   e 0.020                                  \clk_div_inst/n238
-FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_29
 Route         1   e 0.020                                  \clk_div_inst/n239
+FCI_TO_FCO  ---     0.051            CIN to COUT           \clk_div_inst/equal_141_31
+Route         1   e 0.020                                  \clk_div_inst/n240
 FCI_TO_F    ---     0.322            CIN to S[2]           \clk_div_inst/equal_141_32
-Route        33   e 1.819                                  \clk_div_inst/n135
+Route        33   e 1.819                                  \clk_div_inst/n136
 LUT4        ---     0.166              B to Z              \clk_div_inst/i1_2_lut
 Route         1   e 1.020                                  \clk_div_inst/matrix_clockOUT_N_198
                   --------
@@ -156,15 +156,15 @@ clk0 [get_nets clk_c]                   |     5.000 ns|     6.523 ns|     8 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\clk_div_inst/n135                      |      33|     192|     99.00%
+\clk_div_inst/n136                      |      33|     192|     99.00%
                                         |        |        |
-\clk_div_inst/n239                      |       1|     188|     97.92%
+\clk_div_inst/n240                      |       1|     188|     97.92%
                                         |        |        |
-\clk_div_inst/n238                      |       1|     148|     77.08%
+\clk_div_inst/n239                      |       1|     148|     77.08%
                                         |        |        |
-\clk_div_inst/n237                      |       1|     140|     72.92%
+\clk_div_inst/n238                      |       1|     140|     72.92%
                                         |        |        |
-\clk_div_inst/n236                      |       1|     100|     52.08%
+\clk_div_inst/n237                      |       1|     100|     52.08%
                                         |        |        |
 \clk_div_inst/counter3[0]               |       2|      33|     17.19%
                                         |        |        |
@@ -176,15 +176,15 @@ Critical Nets                           |   Loads|  Errors| % of total
                                         |        |        |
 \clk_div_inst/counter3[14]              |       2|      33|     17.19%
                                         |        |        |
-\clk_div_inst/n172                      |       1|      33|     17.19%
-                                        |        |        |
-\clk_div_inst/n220                      |       1|      33|     17.19%
+\clk_div_inst/n173                      |       1|      33|     17.19%
                                         |        |        |
 \clk_div_inst/n221                      |       1|      33|     17.19%
                                         |        |        |
-\clk_div_inst/n226                      |       1|      33|     17.19%
+\clk_div_inst/n222                      |       1|      33|     17.19%
                                         |        |        |
-\clk_div_inst/n230                      |       1|      33|     17.19%
+\clk_div_inst/n227                      |       1|      33|     17.19%
+                                        |        |        |
+\clk_div_inst/n231                      |       1|      33|     17.19%
                                         |        |        |
 \clk_div_inst/matrix_clockOUT_N_198     |       1|      32|     16.67%
                                         |        |        |
@@ -199,5 +199,5 @@ Timing errors: 192  Score: 60010
 Constraints cover  1600 paths, 97 nets, and 193 connections (92.3% coverage)
 
 
-Peak memory: 100552704 bytes, TRCE: 1499136 bytes, DLYMAN: 0 bytes
+Peak memory: 100839424 bytes, TRCE: 1454080 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

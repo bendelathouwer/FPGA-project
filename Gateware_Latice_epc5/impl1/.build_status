@@ -8,29 +8,33 @@
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
             <Task name="Promgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="0">
-            <Task name="Map" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="Map" build_result="0" build_time="1779291134">
+            <Task name="Map" build_result="0" update_result="2" update_time="1779291134"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="0">
-            <Task name="PAR" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="PAR" build_result="0" build_time="1779291134">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1779291134"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1779291134"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="1" build_time="1779287307">
-            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1779287307"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1779287302"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1779290070">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1779290070"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1779290070"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1779287302"/>
-            <Task name="BKM" build_result="0" update_result="3" update_time="0"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1779290070"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1779290070"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="proofofconcept_impl1.lsedata" last_build_time="1779207999" last_build_size="149211"/>
-        <Report name="proofofconcept_impl1.ngd" last_build_time="0" last_build_size="0"/>
+        <Report name=".vdbs/proofofconcept_impl1_map.vdb" last_build_time="1779289940" last_build_size="37292"/>
+        <Report name="proofofconcept_impl1.lsedata" last_build_time="1779289938" last_build_size="147128"/>
+        <Report name="proofofconcept_impl1.ncd" last_build_time="1779289944" last_build_size="7043"/>
+        <Report name="proofofconcept_impl1.ngd" last_build_time="1779289938" last_build_size="7026"/>
+        <Report name="proofofconcept_impl1.twr" last_build_time="1779289945" last_build_size="3230"/>
+        <Report name="proofofconcept_impl1_map.ncd" last_build_time="1779289939" last_build_size="6983"/>
     </Strategy>
 </BuildStatus>

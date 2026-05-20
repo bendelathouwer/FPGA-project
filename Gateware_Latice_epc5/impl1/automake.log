@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed May 20 16:28:26 2026
+Wed May 20 17:12:18 2026
 
 
 Command Line:  synthesis -f proofofconcept_impl1_lattice.synproj -gui -msgset C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/promote.xml 
@@ -38,7 +38,7 @@ Using performance grade 6.
 
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Timing
-Top-level module name = hub75E_driver.
+Top-level module name = top_level.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -72,6 +72,7 @@ VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_
 VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl
 VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd
 VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd
+VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clockdivider_TB.vhdl
 NGD file = proofofconcept_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -86,4 +87,277 @@ Compile Design Begin
 Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl. VHDL-1481
     <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(5): " arg1="top_level" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg3="5"  />
     <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(21): " arg1="behavioral" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg3="21"  />
-    <postMsg mid="35929241" type="Error"   dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(171): " arg1="matrix_latch_clock_in" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg3="171"  />
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl(15): " arg1="clk_div" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl" arg3="15"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl(30): " arg1="behavioral" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl" arg3="30"  />
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd(27): " arg1="dithering" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd" arg3="27"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd(41): " arg1="behavioral" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd" arg3="41"  />
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd(28): " arg1="hub75e_driver" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd" arg3="28"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd(42): " arg1="behavioral" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd" arg3="42"  />
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl(4): " arg1="clockdivider_tb" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl" arg3="4"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl(7): " arg1="behavioral" arg2="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl" arg3="7"  />
+unit top_level is not yet analyzed. VHDL-1485
+unit top_level is not yet analyzed. VHDL-1485
+c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(5): executing top_level(Behavioral)
+
+    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(35): " arg1="&quot;UU&quot;" arg2="x" arg3="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg4="35"  />
+    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(36): " arg1="&quot;UU&quot;" arg2="y" arg3="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg4="36"  />
+    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(43): " arg1="&quot;UUUUUUUU&quot;" arg2="r_in" arg3="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg4="43"  />
+    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(44): " arg1="&quot;UUUUUUUU&quot;" arg2="g_in" arg3="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg4="44"  />
+    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(45): " arg1="&quot;UUUUUUUU&quot;" arg2="b_in" arg3="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg4="45"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(19): " arg1="top_level" arg2="Behavioral" arg3="c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl" arg4="19"  />
+Top module name (VHDL): top_level
+Last elaborated design is top_level(Behavioral)
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = top_level.
+
+
+
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="clk"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="reset"  />
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in top_level_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="clk" arg2="clk"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="clk"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="reset" arg2="reset"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="reset"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
+
+Design Results:
+     17 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file proofofconcept_impl1.ngd.
+
+################### Begin Area Report (top_level)######################
+Number of register bits => 0 of 12687 (0 % )
+GSR => 1
+OB => 13
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : OE, loads : 0
+  Net : LAT, loads : 0
+  Net : E, loads : 0
+  Net : D, loads : 0
+  Net : C, loads : 0
+  Net : B, loads : 0
+  Net : A, loads : 0
+  Net : B2, loads : 0
+  Net : G2, loads : 0
+  Net : R2, loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 91.836  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.672  secs
+--------------------------------------------------------------
+
+map -a "ECP5U" -p LFE5U-12F -t CABGA381 -s 6 -oc Industrial   "proofofconcept_impl1.ngd" -o "proofofconcept_impl1_map.ncd" -pr "proofofconcept_impl1.prf" -mp "proofofconcept_impl1.mrp" -lpf "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/impl1/proofofconcept_impl1.lpf" -lpf "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf"             
+map:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: proofofconcept_impl1.ngd
+   Picdevice="LFE5U-12F"
+
+   Pictype="CABGA381"
+
+   Picspeed=6
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LFE5U-12FCABGA381, Performance used: 6.
+
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf(8): Semantic error in &quot;FREQUENCY PORT &quot;clk_25mhz&quot; 25.000000 MHz ;&quot;: " arg1="&quot;clk_25mhz&quot; matches no ports in the design. " arg2="C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf" arg3="8"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf(6): Semantic error in &quot;LOCATE COMP &quot;clk_25mhz&quot; SITE &quot;G2&quot; ;&quot;: " arg1="clk_25mhz" arg2="C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf" arg3="6"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf(7): Semantic error in &quot;IOBUF PORT &quot;clk_25mhz&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 ;&quot;: " arg1="clk_25mhz" arg2="C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/constraint.lpf" arg3="7"  />
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="clk"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="reset"  />
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="clk"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="reset"  />
+
+
+
+Design Summary:
+   Number of registers:      0 out of 12687 (0%)
+      PFU registers:            0 out of 12096 (0%)
+      PIO registers:            0 out of   591 (0%)
+   Number of SLICEs:         0 out of  6048 (0%)
+      SLICEs as Logic/ROM:      0 out of  6048 (0%)
+      SLICEs as RAM:            0 out of  4536 (0%)
+      SLICEs as Carry:          0 out of  6048 (0%)
+   Number of LUT4s:          0 out of 12096 (0%)
+      Number used as logic LUTs:          0
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 13 out of 197 (7%)
+   Number of block RAMs:  0 out of 32 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+
+   Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+ 
+
+   Number of warnings:  7
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 48 MB
+
+Dumping design to file proofofconcept_impl1_map.ncd.
+
+ncd2vdb "proofofconcept_impl1_map.ncd" ".vdbs/proofofconcept_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+
+mpartrce -p "proofofconcept_impl1.p2t" -f "proofofconcept_impl1.p3t" -tf "proofofconcept_impl1.pt" "proofofconcept_impl1_map.ncd" "proofofconcept_impl1.ncd"
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+par -f proofofconcept_impl1.p2t.tmp0 proofofconcept_impl1_map.ncd proofofconcept_impl1.dir\5_1.dir proofofconcept_impl1.prf -gui -msgset "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/promote.xml"  
+
+Output design is: proofofconcept_impl1
+Output DIR    is: .
+Preference file is: proofofconcept_impl1.prf
+Exiting mpartrce with exit code 0
+
+trce -f "proofofconcept_impl1.pt" -o "proofofconcept_impl1.twr" "proofofconcept_impl1.ncd" "proofofconcept_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file proofofconcept_impl1.ncd.
+Design name: top_level
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-12F
+Package:     CABGA381
+Performance: 6
+Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Wed May 20 17:12:25 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o proofofconcept_impl1.twr -gui -msgset C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/promote.xml proofofconcept_impl1.ncd proofofconcept_impl1.prf 
+Design file:     proofofconcept_impl1.ncd
+Preference file: proofofconcept_impl1.prf
+Device,speed:    LFE5U-12F,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 0 paths, 0 nets, and 0 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 149 MB
+

@@ -7,6 +7,18 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 20 17:12:18 2026
+
+
+Command Line:  synthesis -f proofofconcept_impl1_lattice.synproj -gui -msgset C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/promote.xml 
+
 Synthesis options:
 The -a option is ECP5U.
 The -s option is 6.
@@ -32,7 +44,7 @@ Using performance grade 6.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = hub75E_driver.
+Top-level module name = top_level.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -66,6 +78,7 @@ VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_
 VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl
 VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd
 VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd
+VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clockdivider_TB.vhdl
 NGD file = proofofconcept_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -80,7 +93,93 @@ INFO - synthesis: The default VHDL library search path is now "C:/Users/bende/Do
 Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl. VHDL-1481
 INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(5): analyzing entity top_level. VHDL-1012
 INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(21): analyzing architecture behavioral. VHDL-1010
-ERROR - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(171): matrix_latch_clock_in is not declared. VHDL-1241
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl. VHDL-1481
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl(15): analyzing entity clk_div. VHDL-1012
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clk_div.vhdl(30): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd. VHDL-1481
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd(27): analyzing entity dithering. VHDL-1012
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/dithering.vhd(41): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd. VHDL-1481
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd(28): analyzing entity hub75e_driver. VHDL-1012
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/hub75e_driver.vhd(42): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl. VHDL-1481
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl(4): analyzing entity clockdivider_tb. VHDL-1012
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/clockdivider_tb.vhdl(7): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+unit top_level is not yet analyzed. VHDL-1485
+c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(5): executing top_level(Behavioral)
+
+WARNING - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(35): using initial value "UU" for x since it is never assigned. VHDL-1303
+WARNING - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(36): using initial value "UU" for y since it is never assigned. VHDL-1303
+WARNING - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(43): using initial value "UUUUUUUU" for r_in since it is never assigned. VHDL-1303
+WARNING - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(44): using initial value "UUUUUUUU" for g_in since it is never assigned. VHDL-1303
+WARNING - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(45): using initial value "UUUUUUUU" for b_in since it is never assigned. VHDL-1303
+WARNING - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(19): replacing existing netlist top_level(Behavioral). VHDL-1205
+Top module name (VHDL): top_level
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = top_level.
+
+
+
+WARNING - synthesis: I/O Port clk 's net has no driver and is unused.
+WARNING - synthesis: I/O Port reset 's net has no driver and is unused.
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_level_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'clk' has no load.
+WARNING - synthesis: input pad net 'clk' has no legal load.
+WARNING - synthesis: logical net 'reset' has no load.
+WARNING - synthesis: input pad net 'reset' has no legal load.
+WARNING - synthesis: DRC complete with 4 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file proofofconcept_impl1.ngd.
+
+################### Begin Area Report (top_level)######################
+Number of register bits => 0 of 12687 (0 % )
+GSR => 1
+OB => 13
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : OE, loads : 0
+  Net : LAT, loads : 0
+  Net : E, loads : 0
+  Net : D, loads : 0
+  Net : C, loads : 0
+  Net : B, loads : 0
+  Net : A, loads : 0
+  Net : B2, loads : 0
+  Net : G2, loads : 0
+  Net : R2, loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 91.836  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.672  secs
+--------------------------------------------------------------
 
 
 

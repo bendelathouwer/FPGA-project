@@ -19,14 +19,14 @@ entity top_level is
 end top_level;
 
 architecture Behavioral of top_level is
-
+ 
     -- =====================================================
     -- Clock signals
     -- =====================================================
     signal clk_out1_sig   : std_logic;
     signal clk_out2_sig   : std_logic;
     signal matrix_clk_sig : std_logic;
-
+    signal matrix_latch_clock_IN : std_logic;
     -- =====================================================
     -- Example pixel position signals
     -- =====================================================
@@ -53,7 +53,7 @@ architecture Behavioral of top_level is
     -- =====================================================
     -- Clock divider component
     -- =====================================================
-    component clock_divider is
+    component clk_div is
         port (
             clk             : in  std_logic;
             reset           : in  std_logic;
@@ -86,7 +86,7 @@ architecture Behavioral of top_level is
     -- =====================================================
     -- HUB75 driver component
     -- =====================================================
-    component hub75E_driver is
+    component hub75E_Driver is
         port (
 
             matrix_clockIN : in std_logic;
@@ -112,7 +112,7 @@ begin
     -- =====================================================
     -- Clock divider instance
     -- =====================================================
-    clk_div_inst : clock_divider
+    clk_div_inst : clk_div
         port map (
             clk             => clk,
             reset           => reset,
@@ -141,9 +141,9 @@ begin
         );
 
     -- =====================================================
-    -- HUB75 driver instance
+    -- HUB75e driver instance
     -- =====================================================
-    hub75_inst : hub75E_driver
+	hub75_inst : hub75E_driver
         port map (
 
             matrix_clockIN => matrix_clk_sig,

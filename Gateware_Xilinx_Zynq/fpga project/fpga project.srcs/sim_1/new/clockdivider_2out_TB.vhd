@@ -35,7 +35,7 @@ begin
             reset    => reset,
             clk_out1 => clk_out1,
             clk_out2 => clk_out2,
-            matrix_clock => matrix_clock
+            matrix_clockOUT => matrix_clock
         );
 
     --------------------------------------------------------------------

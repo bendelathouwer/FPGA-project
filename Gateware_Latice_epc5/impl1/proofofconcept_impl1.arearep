@@ -1,31 +1,9 @@
 ----------------------------------------------------------------------
 Report for cell top_level.TECH
-Register bits:  33 of 12687 (0.260%)
-I/O cells:      15
+Register bits:  0 of 12687 (0.000%)
+I/O cells:      13
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2C        22          100.0
-                            FD1S3AX         1          100.0
-                            FD1S3IX        32          100.0
                                 GSR         1          100.0
-                                 IB         2          100.0
-                               LUT4        11          100.0
                                  OB        13          100.0
-SUB MODULES
-      clock_divider(5000,200,26042)         1
-                      hub75E_driver         1
-                              TOTAL        84
-----------------------------------------------------------------------
-Report for cell hub75E_driver.Behavioral
-Instance Path : 
-                              TOTAL         0
-----------------------------------------------------------------------
-Report for cell clock_divider(5000,200,26042).v1
-Instance Path : clk_div_inst
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2C        22          100.0
-                            FD1S3AX         1          100.0
-                            FD1S3IX        32          100.0
-                               LUT4        10           90.9
-                              TOTAL        65
+                              TOTAL        14

@@ -35,7 +35,8 @@
 "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl"
 "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd"
 "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd"
--top hub75E_driver
+"C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clockdivider_TB.vhdl"
+-top top_level
 
 
 -p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/impl1" "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5"

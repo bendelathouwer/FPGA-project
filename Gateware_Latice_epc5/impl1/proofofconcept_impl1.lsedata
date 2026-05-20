@@ -1,8 +1,8 @@
 <top name = "top_level"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "clk_out1_sig"  type = "net" />
     <clockitem name = "clk"  type = "port" />
+    <clockitem name = "clk_out1_sig"  type = "net" />
 </clocks>
 
 <!--
@@ -56,58 +56,6 @@
         <nitem  name = "clk_out1_sig"  />
         <nitem  name = "clk_div_inst/counter1_31__N_129"  />
         <nitem  name = "clk_div_inst/clk_out1_N_196"  />
-        </nets>
-    </instance>
-
-    <instance  name = "hub75_inst"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "matrix_clockIN"  direction = "in"  />
-        <pitem  name = "R_in[2]"  direction = "in"  />
-        <pitem  name = "R_in[1]"  direction = "in"  />
-        <pitem  name = "R_in[0]"  direction = "in"  />
-        <pitem  name = "G_in[2]"  direction = "in"  />
-        <pitem  name = "G_in[1]"  direction = "in"  />
-        <pitem  name = "G_in[0]"  direction = "in"  />
-        <pitem  name = "B_in[1]"  direction = "in"  />
-        <pitem  name = "B_in[0]"  direction = "in"  />
-        <pitem  name = "R1"  direction = "out"  />
-        <pitem  name = "G1"  direction = "out"  />
-        <pitem  name = "B1"  direction = "out"  />
-        <pitem  name = "R2"  direction = "out"  />
-        <pitem  name = "G2"  direction = "out"  />
-        <pitem  name = "B2"  direction = "out"  />
-        <pitem  name = "A"  direction = "out"  />
-        <pitem  name = "B"  direction = "out"  />
-        <pitem  name = "C"  direction = "out"  />
-        <pitem  name = "D"  direction = "out"  />
-        <pitem  name = "E"  direction = "out"  />
-        <pitem  name = "LAT"  direction = "out"  />
-        <pitem  name = "OE"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "matrix_clk_sig"  />
-        <nitem  name = "dither_R[2]"  />
-        <nitem  name = "dither_R[1]"  />
-        <nitem  name = "dither_R[0]"  />
-        <nitem  name = "dither_G[2]"  />
-        <nitem  name = "dither_G[1]"  />
-        <nitem  name = "dither_G[0]"  />
-        <nitem  name = "dither_B[1]"  />
-        <nitem  name = "dither_B[0]"  />
-        <nitem  name = "R1"  />
-        <nitem  name = "G1"  />
-        <nitem  name = "B1"  />
-        <nitem  name = "R2"  />
-        <nitem  name = "G2"  />
-        <nitem  name = "B2"  />
-        <nitem  name = "A"  />
-        <nitem  name = "B"  />
-        <nitem  name = "C"  />
-        <nitem  name = "D"  />
-        <nitem  name = "E"  />
-        <nitem  name = "LAT"  />
-        <nitem  name = "OE"  />
         </nets>
     </instance>
 
@@ -2837,6 +2785,7 @@
 
     <instance  name = "clk_div_inst"  />
     <instance  name = "dithering_inst"  />
+    <instance  name = "hub75_inst"  />
     <!--
         REG instances in netlist: 9
     -->
@@ -2854,12 +2803,13 @@
     </regs>
 
     <!--
-        Views in design "top_level": 2
+        Views in design "top_level": 3
     -->
 
     <views>
-        <view  name = "clock_divider(5000,200,26042)"  />
+        <view  name = "clk_div(5000,200,26042)"  />
         <view  name = "dithering"  />
+        <view  name = "hub75E_Driver"  />
     </views>
 
 </unit>

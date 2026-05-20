@@ -4,15 +4,15 @@
 -- Design Name: clock-divider
 -- Module Name: Clockdivider - Behavioral
 -- Project Name: fpga project
--- Target Devices: zynq 7000 Arty Z7 Arty Z7-20 XC7Z020-1CLG400C 
---fout?=fin/(2*devisor)??
+-- Target Devices: ulx3s 
+--fout=fin/(2*devisor)
 
 ---------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity clock_divider is
+entity clk_div is
     generic (
         DIVISOR1 : integer := 5000;  -- pas aan voor gewenste frequentie
         DIVISOR2 : integer := 200;  -- pas aan voor gewenste frequentie
@@ -25,9 +25,9 @@ entity clock_divider is
             clk_out2 : out std_logic;
             matrix_clockOUT : out std_logic    
         );
-end clock_divider;
+end clk_div;
 
-architecture Behavioral of clock_divider is
+architecture Behavioral of clk_div is
     signal counter1 : integer := 0;
     signal counter2 : integer := 0;
     signal counter3 : integer := 0;
