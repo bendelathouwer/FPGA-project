@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue May 19 18:29:34 2026
+Wed May 20 16:28:26 2026
 
 
-Command Line:  synthesis -f proofofconcept_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f proofofconcept_impl1_lattice.synproj -gui -msgset C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:

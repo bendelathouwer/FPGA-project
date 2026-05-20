@@ -168,7 +168,7 @@ begin
 
             LAT => LAT,
             OE  => OE,
-			matrix_latch_clock_IN=>	matrix_latch_clock_IN
+			matrix_latch_clock_IN => matrix_latch_clock_IN
         );
 
 end Behavioral;
