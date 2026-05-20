@@ -1,0 +1,34 @@
+#Start recording tcl command: 5/20/2026 16:26:11
+#Project Location: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5; Project name: proofofconcept
+prj_project open "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/proofofconcept.ldf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl" SynthesisOnly
+prj_run Synthesis -impl impl1
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd" SynthesisOnly
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd" SynthesisOnly
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl" SynthesisOnly
+prj_run Synthesis -impl impl1
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl" SynthesisAndSimulate
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_src add "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clockdivider_TB.vhdl"
+launch_synplify_prj impl1
+prj_src add "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim/sim.spf"
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl" SimulateOnly
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl" SynthesisAndSimulate
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl" SynthesisOnly
+prj_src add "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim/sim.spf"
+prj_src add "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim/sim.spf"
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl" SynthesisAndSimulate
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd" SynthesisAndSimulate
+prj_src syn_sim -src "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd" SynthesisAndSimulate
+#Stop recording: 5/20/2026 17:32:35

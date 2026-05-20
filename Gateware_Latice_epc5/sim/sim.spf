@@ -1,0 +1,11 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="sim" simType="QuestaSim">
+    <Source worklib="work" path="hub75E_Driver.vhd" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="dithering.vhd" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="clk_div.vhdl" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="top.vhdl" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="clockdivider_TB.vhdl" type="VHDL" langstandard="" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5u"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="clockdivider_TB"/>
+</BaliSimProject>

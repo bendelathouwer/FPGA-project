@@ -1,0 +1,23 @@
+if {![file exists "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim/sim.mpf"]} { 
+	project new "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim" sim
+	project addfile "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd"
+	project addfile "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd"
+	project addfile "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl"
+	project addfile "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl"
+	project addfile "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clockdivider_TB.vhdl"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd"
+	vcom -work work "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd"
+	vcom -work work "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl"
+	vcom -work work "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl"
+	vcom -work work "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clockdivider_TB.vhdl"
+} else {
+	project open "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim/sim"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  clockdivider_TB -t 10ms
+view wave
+add wave /*
+run 1000ns

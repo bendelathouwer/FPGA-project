@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 15679776 work.clockdivider_TB -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 1-e0b55ff1781f-6a0dd34c-168-4274 +__design_bin_path+C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim +__betafsm

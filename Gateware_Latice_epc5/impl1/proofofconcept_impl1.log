@@ -1,0 +1,8 @@
+---- MParTrce Tool Log File ----
+iteration 5_1
+
+par -f proofofconcept_impl1.p2t.tmp0 proofofconcept_impl1_map.ncd proofofconcept_impl1.dir\5_1.dir proofofconcept_impl1.prf -gui -msgset "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/promote.xml"  
+Copy 5_1.ncd to proofofconcept_impl1.ncd
+
+
+

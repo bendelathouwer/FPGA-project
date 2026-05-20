@@ -1,0 +1,57 @@
+[N
+6
+1
+74 C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/sim/work
+3
+10 behavioral
+2
+7 clk_div
+4
+8 DIVISOR1
+5
+8 DIVISOR2
+6
+8 DIVISOR3
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+5000
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+5
+0
+0
+200
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+6
+0
+0
+26042
+0
+0 0
+0
+0
+]

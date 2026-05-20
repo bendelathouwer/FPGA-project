@@ -1,0 +1,204 @@
+
+          Lattice Mapping Report File for Design Module 'top_level'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-12F -t CABGA381 -s 6 -oc Industrial
+     proofofconcept_impl1.ngd -o proofofconcept_impl1_map.ncd -pr
+     proofofconcept_impl1.prf -mp proofofconcept_impl1.mrp -lpf C:/Users/bende/D
+     ocuments/GitHub/FPGA-project/Gateware_Latice_epc5/impl1/proofofconcept_impl
+     1.lpf -lpf C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc
+     5/constraint.lpf -gui -msgset C:/Users/bende/Documents/GitHub/FPGA-project/
+     Gateware_Latice_epc5/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-12FCABGA381
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  05/20/26  17:12:19
+
+Design Summary
+--------------
+
+   Number of registers:      0 out of 12687 (0%)
+      PFU registers:            0 out of 12096 (0%)
+      PIO registers:            0 out of   591 (0%)
+   Number of SLICEs:         0 out of  6048 (0%)
+      SLICEs as Logic/ROM:      0 out of  6048 (0%)
+      SLICEs as RAM:            0 out of  4536 (0%)
+      SLICEs as Carry:          0 out of  6048 (0%)
+   Number of LUT4s:          0 out of 12096 (0%)
+      Number used as logic LUTs:          0
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 13 out of 197 (7%)
+   Number of block RAMs:  0 out of 32 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+
+                                    Page 1
+
+
+
+
+Design:  top_level                                     Date:  05/20/26  17:12:19
+
+Design Summary (cont)
+---------------------
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+
+
+
+
+   Number of warnings:  7
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5
+     /constraint.lpf(8): Semantic error in "FREQUENCY PORT "clk_25mhz" 25.000000
+     MHz ;": "clk_25mhz" matches no ports in the design.  This preference has
+     been disabled.
+WARNING - map: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5
+     /constraint.lpf(6): Semantic error in "LOCATE COMP "clk_25mhz" SITE "G2"
+     ;": COMP "clk_25mhz" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5
+     /constraint.lpf(7): Semantic error in "IOBUF PORT "clk_25mhz" PULLMODE=NONE
+     IO_TYPE=LVCMOS33 ;": Port "clk_25mhz" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: input pad net 'clk' has no legal load.
+WARNING - map: input pad net 'reset' has no legal load.
+WARNING - map: IO buffer missing for top level port clk...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port reset...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| OE                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LAT                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| E                   | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| D                   | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  top_level                                     Date:  05/20/26  17:12:19
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| C                   | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B                   | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| A                   | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B2                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| G2                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| R2                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| B1                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| G1                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| R1                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i12 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Block i1 was optimized away.
+
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 48 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.
