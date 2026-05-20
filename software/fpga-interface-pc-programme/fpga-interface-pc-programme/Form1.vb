@@ -11,8 +11,6 @@ Imports AForge.Video
 Imports AForge.Video.DirectShow
 Imports AForge.Imaging.Filters
 
-
-'here we close the application when the close button is clicked 
 Public Class Form1
     'declare some global variables that we will use in the program
     Public Horizonal_matrix_size As Integer '"global" variable for the horizontal size of the led matrix 
@@ -27,6 +25,7 @@ Public Class Form1
     Public recvTask As Task = Nothing
     Public videoSource As VideoCaptureDevice
     Public videoSourcePlayer As New AForge.Controls.VideoSourcePlayer
+    Public picture As Bitmap = Nothing
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Find_IP()
@@ -144,6 +143,7 @@ Public Class Form1
             debug.AppendText("Fout bij sluiten verbinding: " & ex.Message & vbCrLf)
         End Try
     End Sub
+    ' Public Sub connecttoclient(ip As String, port As String, datatosend As Byte)
     Public Sub connecttoclient(ip As String, port As String)
         Try
             Dim portNum As Integer

@@ -1,0 +1,8 @@
+BLOCK RESETPATHS;
+BLOCK ASYNCPATHS;
+## ULX3S v2.x.x and v3.0.x
+
+# The clock "usb" and "gpdi" sheet
+LOCATE COMP "clk_25mhz" SITE "G2";
+IOBUF  PORT "clk_25mhz" PULLMODE=NONE IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk_25mhz" 25 MHZ;

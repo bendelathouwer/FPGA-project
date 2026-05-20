@@ -1,0 +1,74 @@
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA381.
+The -d option is LFE5U-12F.
+Using package CABGA381.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-12F
+
+### Package : CABGA381
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = hub75E_driver.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/impl1 (searchpath added)
+-p C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5 (searchpath added)
+VHDL library = work
+VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/top.vhdl
+VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/clk_div.vhdl
+VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/dithering.vhd
+VHDL design file = C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/hub75E_Driver.vhd
+NGD file = proofofconcept_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Latice_epc5/impl1". VHDL-1504
+Analyzing VHDL file c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl. VHDL-1481
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(5): analyzing entity top_level. VHDL-1012
+INFO - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(21): analyzing architecture behavioral. VHDL-1010
+ERROR - synthesis: c:/users/bende/documents/github/fpga-project/gateware_latice_epc5/top.vhdl(171): matrix_latch_clock_in is not declared. VHDL-1241
