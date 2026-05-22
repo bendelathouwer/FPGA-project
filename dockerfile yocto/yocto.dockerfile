@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     xz-utils debianutils iputils-ping python3-git python3-jinja2 \
     libegl1-mesa libsdl1.2-dev pylint xterm file locales \
     zstd lz4 sudo vim
-#install qemu so we can test or embedded build 
+#install qemu so we can test our embedded build 
 RUN apt-get install qemu-system
 #these comands has an order , locals need to be ran first 
 
