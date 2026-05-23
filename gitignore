@@ -1,0 +1,80 @@
+# =========================
+# XILINX / VIVADO PROJECT
+# =========================
+
+# ---- Project builds ----
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.xpr.*
+
+# ---- Vivado generated folders ----
+*.gen/
+*.ip_user_files/
+*.xsim/
+*.webtalk/
+*.sdk/
+*.srcs/sources_1/bd/*/hdl/
+
+# ---- Simulation files (VERY IMPORTANT) ----
+*.wdb
+*.wcfg
+*.log
+*.jou
+*.pb
+*.str
+*.ltx
+
+# XSIM directories
+xsim.dir/
+*.pb
+*.vcd
+
+# ---- Bitstream / build outputs ----
+*.bit
+*.bin
+*.mmi
+*.ltx
+*.dcp
+*.rpt
+*.xml
+*.html
+
+# ---- Vivado autosave / backup ----
+*.backup.log
+*.backup.jou
+*.bxml
+*.tmp
+
+# ---- System / editor junk ----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ---- ModelSim / Questa (if used) ----
+transcript
+vsim.wlf
+work/
+
+# ---- Quartus (if mixed projects) ----
+db/
+incremental_db/
+output_files/
+*.qws
+
+# ---- Large generated simulation data ----
+*.trn
+*.wlf
+*.vcd
+*.fst
+
+# ---- Python (if used in FPGA flow) ----
+__pycache__/
+*.pyc
+
+# ---- LFS hint (optional) ----
+# Uncomment if you later use Git LFS for large files
+# *.bit filter=lfs diff=lfs merge=lfs -text
