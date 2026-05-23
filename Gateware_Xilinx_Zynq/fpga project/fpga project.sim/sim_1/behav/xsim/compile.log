@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sources_1/new/clockdivider_2out.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clock_divider'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clockdivider_2out_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sources_1/new/dithering.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dithering'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/dithering_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dithering_tb'

@@ -1,0 +1,4 @@
+Running: xsim.dir/dithering_tb_behav/xsimk.exe -simmode gui -wdb dithering_tb_behav.wdb -simrunnum 0 -socket 50440
+Design successfully loaded
+Design Loading Memory Usage: 8344 KB (Peak: 8344 KB)
+Design Loading CPU Usage: 15 ms
