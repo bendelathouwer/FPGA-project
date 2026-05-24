@@ -6,7 +6,6 @@
     <Generation Name="SIMULATION" State="STALE" Timestamp="1778404625"/>
     <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1778404625"/>
     <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1778404625"/>
-    <Generation Name="INSTANTIATION_TEMPLATE" State="STALE" Timestamp="1778404625"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\Processing_System.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

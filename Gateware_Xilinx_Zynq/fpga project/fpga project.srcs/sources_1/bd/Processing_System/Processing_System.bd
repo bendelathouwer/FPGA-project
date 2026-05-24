@@ -11,7 +11,11 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "clk_wiz_0": ""
+      "clk_wiz_0": "",
+      "axi_vdma_0": "",
+      "axi_smc": "",
+      "rst_clk_wiz_0_100M": "",
+      "ten_gig_eth_mac_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1874,9 +1878,150 @@
             "value": "true"
           }
         }
+      },
+      "axi_vdma_0": {
+        "vlnv": "xilinx.com:ip:axi_vdma:6.3",
+        "ip_revision": "24",
+        "xci_name": "Processing_System_axi_vdma_0_0",
+        "xci_path": "ip\\Processing_System_axi_vdma_0_0\\Processing_System_axi_vdma_0_0.xci",
+        "inst_hier_path": "axi_vdma_0",
+        "has_run_ip_tcl": "true",
+        "interface_ports": {
+          "M_AXI_MM2S": {
+            "bd_attributes": {
+              "TYPE": {
+                "value": "END_POINT",
+                "value_src": "auto"
+              }
+            },
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data_MM2S",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "M_AXI_S2MM": {
+            "bd_attributes": {
+              "TYPE": {
+                "value": "END_POINT",
+                "value_src": "auto"
+              }
+            },
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data_S2MM",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data_MM2S": {
+              "range": "4G",
+              "width": "32"
+            },
+            "Data_S2MM": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "axi_smc": {
+        "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "ip_revision": "28",
+        "xci_name": "Processing_System_axi_smc_0",
+        "xci_path": "ip\\Processing_System_axi_smc_0\\Processing_System_axi_smc_0.xci",
+        "inst_hier_path": "axi_smc",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "NUM_MI": {
+            "value": "2"
+          },
+          "NUM_SI": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI",
+              "M01_AXI"
+            ],
+            "bd_attributes": {
+              "BRIDGES": {
+                "value": "M00_AXI:M01_AXI",
+                "value_src": "auto"
+              },
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bd_attributes": {
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          },
+          "M01_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bd_attributes": {
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          }
+        }
+      },
+      "rst_clk_wiz_0_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "17",
+        "xci_name": "Processing_System_rst_clk_wiz_0_100M_0",
+        "xci_path": "ip\\Processing_System_rst_clk_wiz_0_100M_0\\Processing_System_rst_clk_wiz_0_100M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_0_100M",
+        "has_run_ip_tcl": "true"
+      },
+      "ten_gig_eth_mac_0": {
+        "vlnv": "xilinx.com:ip:ten_gig_eth_mac:15.1",
+        "ip_revision": "15",
+        "xci_name": "Processing_System_ten_gig_eth_mac_0_0",
+        "xci_path": "ip\\Processing_System_ten_gig_eth_mac_0_0\\Processing_System_ten_gig_eth_mac_0_0.xci",
+        "inst_hier_path": "ten_gig_eth_mac_0",
+        "has_run_ip_tcl": "true"
       }
     },
     "interface_nets": {
+      "axi_smc_M00_AXI": {
+        "interface_ports": [
+          "axi_smc/M00_AXI",
+          "axi_vdma_0/S_AXI_LITE"
+        ]
+      },
+      "axi_smc_M01_AXI": {
+        "interface_ports": [
+          "axi_smc/M01_AXI",
+          "ten_gig_eth_mac_0/s_axi"
+        ]
+      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
@@ -1888,19 +2033,44 @@
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
         ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "axi_smc/S00_AXI"
+        ]
       }
     },
     "nets": {
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "processing_system7_0/M_AXI_GP0_ACLK"
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "axi_smc/aclk",
+          "axi_vdma_0/s_axi_lite_aclk",
+          "rst_clk_wiz_0_100M/slowest_sync_clk",
+          "ten_gig_eth_mac_0/s_axi_aclk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "rst_clk_wiz_0_100M/dcm_locked"
         ]
       },
       "reset_rtl_1": {
         "ports": [
           "reset_rtl",
-          "clk_wiz_0/reset"
+          "clk_wiz_0/reset",
+          "rst_clk_wiz_0_100M/ext_reset_in"
+        ]
+      },
+      "rst_clk_wiz_0_100M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_0_100M/peripheral_aresetn",
+          "axi_vdma_0/axi_resetn",
+          "axi_smc/aresetn",
+          "ten_gig_eth_mac_0/s_axi_aresetn"
         ]
       },
       "sys_clock_1": {
@@ -1908,6 +2078,26 @@
           "sys_clock",
           "clk_wiz_0/clk_in1"
         ]
+      }
+    },
+    "addressing": {
+      "/processing_system7_0": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
+              "SEG_axi_vdma_0_Reg": {
+                "address_block": "/axi_vdma_0/S_AXI_LITE/Reg",
+                "offset": "0x43000000",
+                "range": "64K"
+              },
+              "SEG_ten_gig_eth_mac_0_Reg": {
+                "address_block": "/ten_gig_eth_mac_0/s_axi/Reg",
+                "offset": "0x43C00000",
+                "range": "64K"
+              }
+            }
+          }
+        }
       }
     }
   }

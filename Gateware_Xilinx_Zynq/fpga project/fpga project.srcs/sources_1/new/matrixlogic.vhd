@@ -34,10 +34,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity hub75E_driver is
  Port (     
             --ditherd pixeldata 
-            R_in : in std_logic_vector(2 downto 0);
-            G_in : in std_logic_vector(2 downto 0);
-            B_in : in std_logic_vector(1 downto 0);
-			 matrix_clockIN : in std_logic;--clock into the system
+            R_in_matrix : in std_logic_vector(2 downto 0);
+            G_in_matrix  : in std_logic_vector(2 downto 0);
+            B_in_matrix  : in std_logic_vector(1 downto 0);
+			 clockIN_matrix  : in std_logic;--clock into the system
             --control logic  to the pannel
             R1, G1, B1, R2, G2, B2 : out std_logic;
             A, B, C, D, E : out std_logic;
@@ -48,6 +48,13 @@ end hub75E_driver;
 architecture Behavioral of hub75E_driver is
 
 begin
-
+    --here we start the process with our matrixclock we derive from the top file (top file->clk div -> matrix logic0
+    process(clockIN_matrix)
+    begin
+        --we now trigger the code on the rising edge of the matrix clock 
+        if rising_edge (clockIN_matrix) then
+        
+        end if ;     
+    end process;
 
 end Behavioral;

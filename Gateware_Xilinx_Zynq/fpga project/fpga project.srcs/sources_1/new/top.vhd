@@ -89,12 +89,12 @@ architecture Behavioral of top_level is
     component hub75E_driver is
         port (
 
-            matrix_clockIN : in std_logic;
+            clockIN_matrix : in std_logic;
 
             -- dithered RGB inputs
-            R_in : in std_logic_vector(2 downto 0);
-            G_in : in std_logic_vector(2 downto 0);
-            B_in : in std_logic_vector(1 downto 0);
+            R_in_matrix : in std_logic_vector(2 downto 0);
+            G_in_matrix : in std_logic_vector(2 downto 0);
+            B_in_matrix : in std_logic_vector(1 downto 0);
 
             -- HUB75 outputs
             R1, G1, B1 : out std_logic;
@@ -145,12 +145,12 @@ begin
     -- =====================================================
     hub75_inst : hub75E_driver
         port map (
+            -- need to remap this to the renamed matrix driver vhdl file 
+            clockIN_matrix => matrix_clk_sig,
 
-            matrix_clockIN => matrix_clk_sig,
-
-            R_in => dither_R,
-            G_in => dither_G,
-            B_in => dither_B,
+            R_in_matrix => dither_R,
+            G_in_matrix => dither_G,
+            B_in_matrix => dither_B,
 
             R1 => R1,
             G1 => G1,
