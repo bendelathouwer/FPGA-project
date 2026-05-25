@@ -2,5 +2,5 @@
 2020.2
 Nov 14 2025
 19:37:27
-C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/dithering_tb.vhd,1779557266,vhdl,,,,dithering_tb,,,,,,,,
-C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sources_1/new/dithering.vhd,1779556844,vhdl,,,,dithering,,,,,,,,
+C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/bram_TB.vhd,1779691610,vhdl,,,,tb_hub75_bram,,,,,,,,
+C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sources_1/new/bram_framebuffer.vhd,1779690704,vhdl,C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/bram_TB.vhd,,,hub75_bram,,,,,,,,

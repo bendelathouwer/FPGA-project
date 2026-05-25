@@ -1,7 +1,4 @@
 Time resolution is 1 ps
-Failure: Simulation finished successfully
-Time: 200 ns  Iteration: 0  Process: /dithering_tb/stim_proc  File: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/dithering_tb.vhd
-$finish called at time : 200 ns : File "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/dithering_tb.vhd" Line 138
-Failure: Simulation finished successfully
-Time: 400 ns  Iteration: 0  Process: /dithering_tb/stim_proc  File: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/dithering_tb.vhd
-$finish called at time : 400 ns : File "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/dithering_tb.vhd" Line 138
+Failure: ERROR: BRAM readback failed (expected '1')
+Time: 25 ns  Iteration: 1  Process: /tb_hub75_bram/stim_proc  File: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/bram_TB.vhd
+$finish called at time : 25 ns : File "C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/bram_TB.vhd" Line 123

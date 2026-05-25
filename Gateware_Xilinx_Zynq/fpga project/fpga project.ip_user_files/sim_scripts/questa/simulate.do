@@ -1,7 +1,7 @@
 onbreak {quit -f}
 onerror {quit -f}
 
-vsim  -lib xil_defaultlib clockdivider_2out_TB_opt
+vsim  -lib xil_defaultlib dithering_tb_opt
 
 set NumericStdNoWarnings 1
 set StdArithNoWarnings 1
@@ -12,7 +12,7 @@ view wave
 view structure
 view signals
 
-do {clockdivider_2out_TB.udo}
+do {dithering_tb.udo}
 
 run 1000ns
 

@@ -9,6 +9,9 @@ sv xilinx_vip -i "../../../../../../../../../../AMDDesignTools/2025.2/Vivado/dat
 "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/hdl/clk_vip_if.sv" \
 "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
+sv xpm -i "../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../fpga project.gen/sources_1/bd/Processing_System/ipshared/ec67/hdl" --include "../../../fpga project.gen/sources_1/bd/Processing_System/ipshared/9a25/hdl" --include "../../../fpga project.gen/sources_1/bd/Processing_System/ipshared/a415" \
+"C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
 verilog xil_defaultlib "glbl.v"
 
 # Do not sort compile order

@@ -1341,9 +1341,6 @@
           "PCW_SDIO_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
-          "PCW_SDIO_PERIPHERAL_FREQMHZ": {
-            "value": "50"
-          },
           "PCW_SDIO_PERIPHERAL_VALID": {
             "value": "0"
           },
@@ -1436,9 +1433,6 @@
           },
           "PCW_UART_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
-          },
-          "PCW_UART_PERIPHERAL_FREQMHZ": {
-            "value": "100"
           },
           "PCW_UART_PERIPHERAL_VALID": {
             "value": "0"
@@ -1871,8 +1865,23 @@
         "inst_hier_path": "clk_wiz_0",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "80.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "124.615"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "96.948"
+          },
           "CLK_IN1_BOARD_INTERFACE": {
             "value": "sys_clock"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.000"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -2045,11 +2054,11 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "processing_system7_0/M_AXI_GP0_ACLK",
           "axi_smc/aclk",
           "axi_vdma_0/s_axi_lite_aclk",
-          "rst_clk_wiz_0_100M/slowest_sync_clk",
-          "ten_gig_eth_mac_0/s_axi_aclk"
+          "ten_gig_eth_mac_0/s_axi_aclk",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "rst_clk_wiz_0_100M/slowest_sync_clk"
         ]
       },
       "clk_wiz_0_locked": {

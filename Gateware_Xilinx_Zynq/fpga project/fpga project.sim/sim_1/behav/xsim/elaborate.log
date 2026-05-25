@@ -1,7 +1,7 @@
 Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot dithering_tb_behav xil_defaultlib.dithering_tb -log elaborate.log 
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_hub75_bram_behav xil_defaultlib.tb_hub75_bram -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -12,6 +12,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.dithering [dithering_default]
-Compiling architecture behavioral of entity xil_defaultlib.dithering_tb
-Built simulation snapshot dithering_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.hub75_bram [hub75_bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_hub75_bram
+Built simulation snapshot tb_hub75_bram_behav

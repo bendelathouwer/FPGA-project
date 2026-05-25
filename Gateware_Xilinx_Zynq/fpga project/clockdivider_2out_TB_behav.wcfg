@@ -3,64 +3,52 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="clockdivider_2out_TB_behav.wdb" id="1">
+      <db_ref path="tb_bram_inferred_behav.wdb" id="1">
          <top_modules>
-            <top_module name="clockdivider_2out_TB" />
+            <top_module name="tb_bram_inferred" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="3.900000001 ms"></ZoomEndTime>
-      <Cursor1Time time="0.260475000 ms"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="150.986 ns"></ZoomEndTime>
+      <Cursor1Time time="140.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="208"></NameColumnWidth>
-      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
+      <ValueColumnWidth column_width="87"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="7" />
    <wave_markers>
       <marker time="25000000000" label="" />
       <marker time="781315000" label="" />
    </wave_markers>
-   <wvobject fp_name="/clockdivider_2out_TB/clk" type="logic">
+   <wvobject fp_name="/tb_bram_inferred/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/reset" type="logic">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
+   <wvobject fp_name="/tb_bram_inferred/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
    </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/clk_out1" type="logic">
-      <obj_property name="ElementShortName">clk_out1</obj_property>
-      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   <wvobject fp_name="/tb_bram_inferred/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
    </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/clk_out2" type="logic">
-      <obj_property name="ElementShortName">clk_out2</obj_property>
-      <obj_property name="ObjectShortName">clk_out2</obj_property>
+   <wvobject fp_name="/tb_bram_inferred/addr" type="array">
+      <obj_property name="ElementShortName">addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[9:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/clk_out3" type="logic">
-      <obj_property name="ElementShortName">clk_out3</obj_property>
-      <obj_property name="ObjectShortName">clk_out3</obj_property>
+   <wvobject fp_name="/tb_bram_inferred/di" type="array">
+      <obj_property name="ElementShortName">di[15:0]</obj_property>
+      <obj_property name="ObjectShortName">di[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/CLK_PERIOD" type="other">
-      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
-      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   <wvobject fp_name="/tb_bram_inferred/do" type="array">
+      <obj_property name="ElementShortName">do[15:0]</obj_property>
+      <obj_property name="ObjectShortName">do[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/uut/counter1" type="other">
-      <obj_property name="ElementShortName">counter1</obj_property>
-      <obj_property name="ObjectShortName">counter1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/uut/counter2" type="other">
-      <obj_property name="ElementShortName">counter2</obj_property>
-      <obj_property name="ObjectShortName">counter2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/uut/clk_reg1" type="logic">
-      <obj_property name="ElementShortName">clk_reg1</obj_property>
-      <obj_property name="ObjectShortName">clk_reg1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clockdivider_2out_TB/uut/clk_reg2" type="logic">
-      <obj_property name="ElementShortName">clk_reg2</obj_property>
-      <obj_property name="ObjectShortName">clk_reg2</obj_property>
+   <wvobject fp_name="/tb_bram_inferred/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
    </wvobject>
 </wave_config>
