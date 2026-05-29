@@ -74,19 +74,16 @@ begin
         -- FIXED WRITE SEQUENCE (correct FPGA timing)
         -- ========================================================
 
-        w_row <= 3;
-        w_col <= 10;
-        w_val <= '1';
+         w_row <= 3;
+         w_col <= 10;
+         w_val <= '1';
+         we <= '1';
 
-        we <= '1';
+         wait for 1 ns;
+         wait until rising_edge(clk);
 
-        -- IMPORTANT FIX:
-        -- no delay tricks, just align with clock edge
-        wait until rising_edge(clk);
+         we <= '0';
 
-        we <= '0';
-
-        -- wait for BRAM latency (2 cycles safe)
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 

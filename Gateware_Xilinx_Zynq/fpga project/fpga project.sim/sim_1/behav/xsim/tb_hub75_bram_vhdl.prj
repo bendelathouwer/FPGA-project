@@ -1,6 +1,13 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
+"../../../../fpga project.srcs/sources_1/new/global_package_Led_driver.vhd" \
+"../../../../fpga project.srcs/sources_1/new/matrixlogic.vhd" \
+"../../../../fpga project.srcs/sources_1/new/clockdivider_2out.vhd" \
+"../../../../fpga project.srcs/sources_1/new/dithering.vhd" \
+"../../../../fpga project.srcs/sources_1/new/top.vhd" \
 "../../../../fpga project.srcs/sources_1/new/bram_framebuffer.vhd" \
+"../../../../fpga project.srcs/sim_1/new/clockdivider_2out_TB.vhd" \
+"../../../../fpga project.srcs/sim_1/new/dithering_tb.vhd" \
 "../../../../fpga project.srcs/sim_1/new/bram_TB.vhd" \
 
 # Do not sort compile order
