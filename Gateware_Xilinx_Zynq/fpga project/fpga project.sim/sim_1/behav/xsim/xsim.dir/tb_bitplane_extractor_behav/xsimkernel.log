@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_bitplane_extractor_behav/xsimk.exe -simmode gui -wdb tb_bitplane_extractor_behav.wdb -simrunnum 0 -socket 29009
+Design successfully loaded
+Design Loading Memory Usage: 8372 KB (Peak: 8372 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 9400 KB (Peak: 9400 KB)
+Simulation CPU Usage: 108 ms
