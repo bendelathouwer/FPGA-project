@@ -1,3 +1,1 @@
 Time resolution is 1 ps
-Note: TEST PASSED: BRAM works correctly
-Time: 65 ns  Iteration: 1  Process: /tb_hub75_bram/stim_proc  File: C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.srcs/sim_1/new/bram_TB.vhd
