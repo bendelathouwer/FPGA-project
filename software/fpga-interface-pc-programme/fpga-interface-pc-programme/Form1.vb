@@ -13,8 +13,8 @@ Imports AForge.Imaging.Filters
 
 Public Class Form1
     'declare some global variables that we will use in the program
-    Public Horizonal_matrix_size As Integer '"global" variable for the horizontal size of the led matrix 
-    Public Vertical_matrix_size As Integer '"global" variable for the vertical size of the led matrix 
+    Public Horizonal_size As Integer '"global" variable for the horizontal size of display
+    Public Vertical_size As Integer '"global" variable for the vertical size of the display
     Public hosetipAddress As String = String.Empty '  for our ip addres 
     Public port As Integer = 0   ' for our port number
     Public textboxInput As String = String.Empty
@@ -30,7 +30,7 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Find_IP()
     End Sub
-    Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click
+    Private Sub close_Click(sender As Object, e As EventArgs) Handles close.Click, close_camera.Click ' with this construct I can close the form with 2 diffrent buttons 
         If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
             videoSource.SignalToStop()
             videoSource.WaitForStop()
@@ -210,6 +210,7 @@ Public Class Form1
             videoSource = New VideoCaptureDevice(videoDevices(0).MonikerString)
             AddHandler videoSource.NewFrame, AddressOf Video_NewFrame
             videoSource.Start()
+
         Else
             DebugCamera.AppendText("Geen webcam gevonden")
         End If
@@ -219,7 +220,6 @@ Public Class Form1
     Public Sub Video_NewFrame(sender As Object, eventArgs As NewFrameEventArgs)
         Dim frame As Bitmap = CType(eventArgs.Frame.Clone(), Bitmap)
         Dim sobel As New SobelEdgeDetector()
-
         If edgedetect.Checked Then
             Dim grayFilter As New Grayscale(0.2125, 0.7154, 0.0721)
             Dim grayImage As Bitmap = grayFilter.Apply(frame)
@@ -260,19 +260,11 @@ Public Class Form1
         Application.Exit()
     End Sub
 
-    Private Sub DisconnectCam_Click(sender As Object, e As EventArgs) Handles DisconnectCam.Click
+    Private Sub DisconnectCam_Click(sender As Object, e As EventArgs)
         If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
             videoSource.SignalToStop()
             videoSource.WaitForStop()
             DebugCamera.AppendText(" webcam disconnected")
         End If
-    End Sub
-
-    Private Sub SendPicture_Click(sender As Object, e As EventArgs) Handles SendPicture.Click
-
-    End Sub
-
-    Private Sub SendCamera_Click(sender As Object, e As EventArgs) Handles SendCamera.Click
-
     End Sub
 End Class

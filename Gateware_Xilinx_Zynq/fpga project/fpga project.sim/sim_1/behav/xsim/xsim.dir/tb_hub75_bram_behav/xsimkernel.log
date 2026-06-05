@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_hub75_bram_behav/xsimk.exe -simmode gui -wdb tb_hub75_bram_behav.wdb -simrunnum 0 -socket 27355
+Running: xsim.dir/tb_hub75_bram_behav/xsimk.exe -simmode gui -wdb tb_hub75_bram_behav.wdb -simrunnum 0 -socket 28799
 Design successfully loaded
-Design Loading Memory Usage: 8376 KB (Peak: 8376 KB)
+Design Loading Memory Usage: 8428 KB (Peak: 8428 KB)
 Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 9392 KB (Peak: 9392 KB)
-Simulation CPU Usage: 61 ms
+Simulation Memory Usage: 9472 KB (Peak: 9472 KB)
+Simulation CPU Usage: 46 ms

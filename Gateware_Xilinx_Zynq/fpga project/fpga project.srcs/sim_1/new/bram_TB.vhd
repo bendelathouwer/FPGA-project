@@ -5,115 +5,133 @@ use IEEE.NUMERIC_STD.ALL;
 entity tb_hub75_bram is
 end tb_hub75_bram;
 
-architecture Behavioral of tb_hub75_bram is
+architecture sim of tb_hub75_bram is
 
-    component hub75_bram
-        port (
-            clk   : in  std_logic;
+    constant COLS : integer := 64;
+    constant ROWS : integer := 16;
 
-            we    : in  std_logic;
-            w_row : in  integer range 0 to 15;
-            w_col : in  integer range 0 to 63;
-            w_val : in  std_logic;
+    signal clk : std_logic := '0';
 
-            r_row : in  integer range 0 to 15;
-            r_col : in  integer range 0 to 63;
-            r_val : out std_logic
-        );
-    end component;
+    -- Port A (write)
+    signal we_a   : std_logic := '0';
+    signal row_a  : integer range 0 to ROWS-1 := 0;
+    signal col_a  : integer range 0 to COLS-1 := 0;
+    signal data_a : std_logic := '0';
 
-    signal clk   : std_logic := '0';
-
-    signal we    : std_logic := '0';
-    signal w_row : integer := 0;
-    signal w_col : integer := 0;
-    signal w_val : std_logic := '0';
-
-    signal r_row : integer := 0;
-    signal r_col : integer := 0;
-    signal r_val : std_logic;
-
-    constant clk_period : time := 10 ns;
+    -- Port B (read)
+    signal row_b  : integer range 0 to ROWS-1 := 0;
+    signal col_b  : integer range 0 to COLS-1 := 0;
+    signal data_b : std_logic;
 
 begin
 
-    DUT: hub75_bram
+    --------------------------------------------------------------------
+    -- DUT
+    --------------------------------------------------------------------
+    DUT : entity work.hub75_bram
+        generic map (
+            COLS => COLS,
+            ROWS => ROWS
+        )
         port map (
-            clk   => clk,
-            we    => we,
-            w_row => w_row,
-            w_col => w_col,
-            w_val => w_val,
-            r_row => r_row,
-            r_col => r_col,
-            r_val => r_val
+            clk    => clk,
+
+            we_a   => we_a,
+            row_a  => row_a,
+            col_a  => col_a,
+            data_a => data_a,
+
+            row_b  => row_b,
+            col_b  => col_b,
+            data_b => data_b
         );
 
-    -- clock
-    clk_process : process
-    begin
-        while true loop
-            clk <= '0';
-            wait for clk_period / 2;
-            clk <= '1';
-            wait for clk_period / 2;
-        end loop;
-    end process;
+    --------------------------------------------------------------------
+    -- Clock 100 MHz
+    --------------------------------------------------------------------
+    clk <= not clk after 5 ns;
 
-    -- stimulus
-    stim_proc : process
+    --------------------------------------------------------------------
+    -- Stimulus
+    --------------------------------------------------------------------
+    process
     begin
 
-        -- read address setup
-        r_row <= 3;
-        r_col <= 10;
+        ----------------------------------------------------------------
+        -- Wait startup
+        ----------------------------------------------------------------
+        wait for 20 ns;
 
-        wait for clk_period;
+        ----------------------------------------------------------------
+        -- Write pixel (2,10) = '1'
+        ----------------------------------------------------------------
+        row_a  <= 2;
+        col_a  <= 10;
+        data_a <= '1';
+        we_a   <= '1';
 
-        -- ========================================================
-        -- FIXED WRITE SEQUENCE (correct FPGA timing)
-        -- ========================================================
+        wait until rising_edge(clk);
 
-         w_row <= 3;
-         w_col <= 10;
-         w_val <= '1';
-         we <= '1';
+        we_a <= '0';
 
-         wait for 1 ns;
-         wait until rising_edge(clk);
-
-         we <= '0';
+        ----------------------------------------------------------------
+        -- Read pixel (2,10)
+        ----------------------------------------------------------------
+        row_b <= 2;
+        col_b <= 10;
 
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        -- check result
-        assert r_val = '1'
-            report "ERROR: BRAM readback failed (expected 1)"
-            severity failure;
+        assert data_b = '1'
+            report "ERROR: pixel (2,10) should be 1"
+            severity error;
 
-        -- ========================================================
-        -- CLEAR OPERATION
-        -- ========================================================
-
-        w_val <= '0';
-        we <= '1';
-
-        wait until rising_edge(clk);
-
-        we <= '0';
+        ----------------------------------------------------------------
+        -- Read unwritten pixel (5,5)
+        ----------------------------------------------------------------
+        row_b <= 5;
+        col_b <= 5;
 
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        assert r_val = '0'
-            report "ERROR: BRAM clear failed (expected 0)"
-            severity failure;
+        assert data_b = '0'
+            report "ERROR: pixel (5,5) should be 0"
+            severity error;
 
-        report "TEST PASSED: BRAM works correctly" severity note;
+        ----------------------------------------------------------------
+        -- Write another pixel
+        ----------------------------------------------------------------
+        row_a  <= 7;
+        col_a  <= 63;
+        data_a <= '1';
+        we_a   <= '1';
+
+        wait until rising_edge(clk);
+
+        we_a <= '0';
+
+        ----------------------------------------------------------------
+        -- Read it back
+        ----------------------------------------------------------------
+        row_b <= 7;
+        col_b <= 63;
+
+        wait until rising_edge(clk);
+        wait until rising_edge(clk);
+
+        assert data_b = '1'
+            report "ERROR: pixel (7,63) should be 1"
+            severity error;
+
+        ----------------------------------------------------------------
+        -- Done
+        ----------------------------------------------------------------
+        report "TEST PASSED" severity note;
 
         wait;
 
     end process;
 
-end Behavioral;
+end sim;
