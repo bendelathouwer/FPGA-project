@@ -1,7 +1,11 @@
 Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+<<<<<<< Updated upstream:Gateware_Xilinx_Zynq/fpga project/fpga project.sim/sim_1/behav/xsim/elaborate.log
 Running: D:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_hub75_bram_behav xil_defaultlib.tb_hub75_bram -log elaborate.log 
+=======
+Running: D:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot clockdivider_2out_TB_behav xil_defaultlib.clockdivider_2out_TB -log elaborate.log 
+>>>>>>> Stashed changes:Gateware/fpga project/fpga project.sim/sim_1/behav/xsim/elaborate.log
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration

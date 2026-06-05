@@ -17,7 +17,11 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< Updated upstream
           "DockedWidth": 144,
+=======
+          "DockedWidth": 147,
+>>>>>>> Stashed changes
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -36,6 +40,7 @@
           ]
         },
         {
+<<<<<<< Updated upstream
           "DockedWidth": 132,
           "SelectedChildIndex": 0,
           "Children": [
@@ -48,6 +53,33 @@
               "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb*",
               "RelativeToolTip": "fpga-interface-pc-programme\\Form1.vb*",
               "ViewState": "AgIAAB0AAAAAAAAAAIA7wB4AAAAIAAAAAAAAAA==",
+=======
+          "DockedWidth": 129,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.Designer.vb",
+              "RelativeDocumentMoniker": "fpga-interface-pc-programme\\Form1.Designer.vb",
+              "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.Designer.vb",
+              "RelativeToolTip": "fpga-interface-pc-programme\\Form1.Designer.vb",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAWwGUBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-28T17:28:54.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb",
+              "RelativeDocumentMoniker": "fpga-interface-pc-programme\\Form1.vb",
+              "ToolTip": "C:\\Users\\bende\\Documents\\GitHub\\FPGA-project\\software\\fpga-interface-pc-programme\\fpga-interface-pc-programme\\Form1.vb",
+              "RelativeToolTip": "fpga-interface-pc-programme\\Form1.vb",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAlwA4BAAAZAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-03-12T09:43:08.865Z",
               "EditorCaption": ""

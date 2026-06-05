@@ -212,7 +212,7 @@ Public Class Form1
             videoSource.Start()
 
         Else
-            DebugCamera.AppendText("Geen webcam gevonden")
+            DebugCamera.AppendText("Geen webcam gevonden" & vbCrLf)
         End If
     End Sub
     'maybe find a sutabler way to do this but for now this works and it is not too bad(i think)
@@ -264,7 +264,19 @@ Public Class Form1
         If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
             videoSource.SignalToStop()
             videoSource.WaitForStop()
-            DebugCamera.AppendText(" webcam disconnected")
+            DebugCamera.AppendText(" webcam disconnected" & vbCrLf)
         End If
+    End Sub
+
+    Private Sub SendPicture_Click(sender As Object, e As EventArgs) Handles SendPicture.Click
+        serializeStream()
+    End Sub
+
+    Private Sub SendCamera_Click(sender As Object, e As EventArgs) Handles SendCamera.Click
+        serializeStream()
+
+    End Sub
+    Public Sub serializeStream()
+
     End Sub
 End Class

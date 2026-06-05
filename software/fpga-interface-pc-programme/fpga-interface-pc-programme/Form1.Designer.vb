@@ -41,8 +41,13 @@ Partial Class Form1
         Connect = New Button()
         Open = New Button()
         TabPage2 = New TabPage()
+<<<<<<< Updated upstream
         Button2 = New Button()
         SendCamera = New Button()
+=======
+        SendCamera = New Button()
+        DisconnectCam = New Button()
+>>>>>>> Stashed changes
         Invert = New RadioButton()
         Sepia = New RadioButton()
         Normal = New RadioButton()
@@ -52,8 +57,11 @@ Partial Class Form1
         DebugCamera = New RichTextBox()
         Connect_cam = New Button()
         Timer1 = New Timer(components)
+<<<<<<< Updated upstream
         Process1 = New Process()
         close_camera = New Button()
+=======
+>>>>>>> Stashed changes
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -226,9 +234,14 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+<<<<<<< Updated upstream
         TabPage2.Controls.Add(close_camera)
         TabPage2.Controls.Add(Button2)
         TabPage2.Controls.Add(SendCamera)
+=======
+        TabPage2.Controls.Add(SendCamera)
+        TabPage2.Controls.Add(DisconnectCam)
+>>>>>>> Stashed changes
         TabPage2.Controls.Add(Invert)
         TabPage2.Controls.Add(Sepia)
         TabPage2.Controls.Add(Normal)
@@ -245,6 +258,7 @@ Partial Class Form1
         TabPage2.Text = "TabPage2"
         TabPage2.UseVisualStyleBackColor = True
         ' 
+<<<<<<< Updated upstream
         ' Button2
         ' 
         Button2.Location = New Point(8, 356)
@@ -254,15 +268,34 @@ Partial Class Form1
         Button2.Text = "Button2"
         Button2.UseVisualStyleBackColor = True
         ' 
+=======
+>>>>>>> Stashed changes
         ' SendCamera
         ' 
         SendCamera.Location = New Point(8, 387)
         SendCamera.Name = "SendCamera"
+<<<<<<< Updated upstream
         SendCamera.Size = New Size(101, 23)
         SendCamera.TabIndex = 18
         SendCamera.Text = "send Camera"
         SendCamera.UseVisualStyleBackColor = True
         ' 
+=======
+        SendCamera.Size = New Size(101, 24)
+        SendCamera.TabIndex = 15
+        SendCamera.Text = "Send"
+        SendCamera.UseVisualStyleBackColor = True
+        ' 
+        ' DisconnectCam
+        ' 
+        DisconnectCam.Location = New Point(8, 358)
+        DisconnectCam.Name = "DisconnectCam"
+        DisconnectCam.Size = New Size(101, 23)
+        DisconnectCam.TabIndex = 14
+        DisconnectCam.Text = "disconect camera"
+        DisconnectCam.UseVisualStyleBackColor = True
+        ' 
+>>>>>>> Stashed changes
         ' Invert
         ' 
         Invert.AutoSize = True
@@ -343,6 +376,7 @@ Partial Class Form1
         Connect_cam.Text = "connect camera"
         Connect_cam.UseVisualStyleBackColor = True
         ' 
+<<<<<<< Updated upstream
         ' Process1
         ' 
         Process1.StartInfo.CreateNewProcessGroup = False
@@ -365,6 +399,8 @@ Partial Class Form1
         close_camera.Text = "close "
         close_camera.UseVisualStyleBackColor = True
         ' 
+=======
+>>>>>>> Stashed changes
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(96F, 96F)
@@ -413,9 +449,14 @@ Partial Class Form1
     Friend WithEvents Normal As RadioButton
     Friend WithEvents Sepia As RadioButton
     Friend WithEvents Invert As RadioButton
+<<<<<<< Updated upstream
     Friend WithEvents SendCamera As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Process1 As Process
     Friend WithEvents close_camera As Button
+=======
+    Friend WithEvents DisconnectCam As Button
+    Friend WithEvents SendCamera As Button
+>>>>>>> Stashed changes
 
 End Class

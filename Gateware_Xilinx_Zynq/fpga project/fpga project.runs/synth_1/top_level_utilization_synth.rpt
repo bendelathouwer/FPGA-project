@@ -1,10 +1,17 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+<<<<<<< Updated upstream:Gateware_Xilinx_Zynq/fpga project/fpga project.runs/synth_1/top_level_utilization_synth.rpt
 | Date         : Sun May 24 17:25:50 2026
 | Host         : Benny running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
+=======
+| Date         : Wed Apr  8 19:38:15 2026
+| Host         : DESKTOP-1SOIGBV running 64-bit major release  (build 9200)
+| Command      : report_utilization -file clock_divider_utilization_synth.rpt -pb clock_divider_utilization_synth.pb
+| Design       : clock_divider
+>>>>>>> Stashed changes:Gateware/fpga project/fpga project.runs/synth_1/clock_divider_utilization_synth.rpt
 | Device       : xc7z020clg400-1
 | Speed File   : -1
 | Design State : Synthesized
