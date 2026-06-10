@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Jun  8 15:15:17 2026
+# Process ID         : 20932
+# Current directory  : C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17332 C:\Users\bende\Documents\GitHub\FPGA-project\Gateware_Xilinx_Zynq\fpga project\fpga project.xpr
+# Log file           : C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/vivado.log
+# Journal file       : C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project\vivado.jou
+# Running On         : DESKTOP-1SOIGBV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+# CPU Frequency      : 3192 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17089 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 27290 MB
+# Available Virtual  : 12061 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bende/Documents/GitHub/FPGA-project/Gateware_Xilinx_Zynq/fpga project/fpga project.xpr}
