@@ -1,0 +1,17 @@
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\bin\Debug\net10.0-windows\WirlessSender.exe
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\bin\Debug\net10.0-windows\WirlessSender.deps.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\bin\Debug\net10.0-windows\WirlessSender.runtimeconfig.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\bin\Debug\net10.0-windows\WirlessSender.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\bin\Debug\net10.0-windows\WirlessSender.pdb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.Form1.resources
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.vbproj.GenerateResource.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.AssemblyInfoInputs.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.AssemblyInfo.vb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.vbproj.CoreCompileInputs.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.sourcelink.json
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\refint\WirlessSender.dll
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.pdb
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\WirlessSender.genruntimeconfig.cache
+C:\Users\bende\Documents\GitHub\FPGA-project\software\wireless sender\WirlessSender\obj\Debug\net10.0-windows\ref\WirlessSender.dll
