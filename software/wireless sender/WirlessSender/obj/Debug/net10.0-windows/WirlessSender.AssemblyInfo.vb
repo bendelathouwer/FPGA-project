@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("WirlessSender"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba113637b379ebd680ce755d7e18f3b09f05bfd5"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+429e782563d0140f1925932874c6893ce68196c8"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("WirlessSender"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("WirlessSender"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
