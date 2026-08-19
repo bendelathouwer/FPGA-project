@@ -14,7 +14,8 @@ RUN apt-get update && \
     libegl1-mesa libsdl1.2-dev pylint xterm file locales \
     zstd lz4 sudo vim qemu-system && \
     rm -rf /var/lib/apt/lists/*
-#add language parameters 
+
+# add language parameters 
 RUN locale-gen en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
