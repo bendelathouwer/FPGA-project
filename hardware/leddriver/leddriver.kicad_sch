@@ -2,9 +2,101 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 21fda176-5e39-481b-9f0c-fdef3996088e)
+	(uuid "21fda176-5e39-481b-9f0c-fdef3996088e")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 48.26 34.29)
+		(size 34.29 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6d41351b-a494-4733-95e8-c10009d704b1")
+		(property "Sheetname" "spf"
+			(at 48.26 33.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "spf.kicad_sch"
+			(at 48.26 50.1146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "leddriver"
+				(path "/21fda176-5e39-481b-9f0c-fdef3996088e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 45.72)
+		(size 44.45 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ab52e979-78a4-4846-a85d-efa7952db1e3")
+		(property "Sheetname" "fpga-som"
+			(at 139.7 45.0084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "som.kicad_sch"
+			(at 139.7 85.6746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "leddriver"
+				(path "/21fda176-5e39-481b-9f0c-fdef3996088e"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
