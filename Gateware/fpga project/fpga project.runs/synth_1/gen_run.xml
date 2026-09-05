@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchTime="0">
-  <File Type="RDS-UTIL" Name="clock_divider_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="clock_divider_utilization_synth.pb"/>
-</GenRun>

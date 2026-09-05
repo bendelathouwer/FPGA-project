@@ -6,6 +6,52 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 134.62 102.87)
+		(size 43.18 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2714ed8a-f2a3-45ed-83c8-31667a9e7c6e")
+		(property "Sheetname" "matrix"
+			(at 134.62 102.1584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "matrix.kicad_sch"
+			(at 134.62 123.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "leddriver"
+				(path "/21fda176-5e39-481b-9f0c-fdef3996088e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 48.26 34.29)
 		(size 34.29 15.24)
 		(exclude_from_sim no)
@@ -93,6 +139,52 @@
 			(project "leddriver"
 				(path "/21fda176-5e39-481b-9f0c-fdef3996088e"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 71.12)
+		(size 41.91 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b09eb1a9-6971-4de1-82e7-e282cc7ff0f6")
+		(property "Sheetname" "jtag"
+			(at 48.26 70.4084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "jtag.kicad_sch"
+			(at 48.26 92.0246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "leddriver"
+				(path "/21fda176-5e39-481b-9f0c-fdef3996088e"
+					(page "4")
 				)
 			)
 		)
